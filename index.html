@@ -893,7 +893,7 @@ label.opt:has(input:focus-visible){outline:2px solid #1f2f86;outline-offset:2px}
                 <legend style="font-size:13px;letter-spacing:.1em;color:#4a4740;padding:0">預計工期</legend>
                 <div style="display:flex;flex-wrap:wrap;margin-top:12px;border:1px solid rgba(26,29,36,.25);width:fit-content;max-width:100%">
                   <sc-for list="{{ whenList }}" as="c">
-                    <label class="opt" style="position:relative;display:inline-flex;align-items:center;box-sizing:border-box;height:44px;padding:0 16px;background:{{ c.bg }};color:{{ c.c }};font-size:14px;letter-spacing:.06em;cursor:pointer;transition:background .25s,color .25s"><input type="radio" name="預計工期" value="{{ c.n }}" checked="{{ c.on }}" onChange="{{ c.go }}"><span>{{ c.n }}</span></label>
+                    <label class="opt" style="position:relative;display:inline-flex;align-items:center;box-sizing:border-box;height:44px;padding:0 16px;background:{{ c.bg }};color:{{ c.c }};font-size:14px;letter-spacing:.06em;cursor:pointer;transition:background .25s,color .25s"><input type="radio" name="預計工期" value="{{ c.n }}" checked="{{ c.on }}" onClick="{{ c.go }}" onChange="{{ c.noop }}"><span>{{ c.n }}</span></label>
                   </sc-for>
                 </div>
               </fieldset>
@@ -1405,7 +1405,7 @@ class Component extends DCLogic {
       licenses:[{n:'電器承裝業'},{n:'自來水管承裝商'}],
       notSent:true,hasMsg:!!s.formMsg,formMsg:s.formMsg,msgColor:s.formOk?'#1f2f86':'#9e3b1b',submitting:s.submitting,submitLabel:s.submitting?'送出中…':'送出諮詢',submitCur:s.submitting?'default':'pointer',submitOp:s.submitting?.6:1,errs:{name:s.errs.name||'',phone:s.errs.phone||'',email:s.errs.email||''},onSubmit:this.onSubmit,
       chipList:['電氣','給排水','空調','弱電','消防','機電統包','其他'].map(n=>{const on=s.chips.includes(n);return{n,on,...pill(on),go:()=>this.setState(x=>({chips:on?x.chips.filter(c=>c!==n):[...x.chips,n]}))};}),
-      whenList:['半年至一年','一年至兩年','兩年以上','尚未確定'].map(n=>{const on=s.when===n;return{n,on,bg:on?'#141c3f':'transparent',c:on?'#fff':'#141c3f',go:()=>this.setState({when:n})};}),
+      whenList:['半年至一年','一年至兩年','兩年以上','尚未確定'].map(n=>{const on=s.when===n;return{n,on,bg:on?'#141c3f':'transparent',c:on?'#fff':'#141c3f',go:()=>this.setState(x=>({when:x.when===n?'':n})),noop:()=>{}};}),
       contactInfo:[{k:'電話',v:'03-518-2626',href:'tel:+88635182626',flagOn:false,flag:''},{k:'傳真',v:'03-518-2727',href:'#/contact',flagOn:false,flag:''},{k:'Email',v:'cs@ycgroup.com.tw',href:'mailto:cs@ycgroup.com.tw',flagOn:false,flag:''},{k:'地址',v:'新竹縣竹北市環科一路 23 號 8 樓之 5',href:'https://maps.google.com/?q=新竹縣竹北市環科一路23號8樓之5',flagOn:false,flag:''}]
     };
   }
