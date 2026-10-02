@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>重陞機電工程股份有限公司｜電氣、給排水、空調、弱電、消防機電統包</title>
+<meta name="description" content="重陞機電工程股份有限公司，30 年機電實務經驗，提供電氣、給排水、空調、弱電、消防與機電統包工程，服務新竹與全台廠房、公共工程及大型建案。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="重陞機電工程股份有限公司">
+<meta property="og:title" content="重陞機電工程股份有限公司｜機電統包工程">
+<meta property="og:description" content="30 年機電實務經驗，電氣、給排水、空調、弱電、消防一站整合，從規劃、施工到驗收。">
+<meta property="og:image" content="https://chou9-cloud.github.io/chongsheng-website/assets/og-image.jpg">
+<meta property="og:url" content="https://chou9-cloud.github.io/chongsheng-website/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&amp;family=Noto+Serif+TC:wght@400;500;600&amp;family=Barlow+Condensed:wght@300;400;500&amp;display=swap">
+<link rel="stylesheet" href="_ds/industry-f8ffc622-8a1b-4f81-ad1b-6dc7ffe498ca/styles.css">
+<script src="_ds/industry-f8ffc622-8a1b-4f81-ad1b-6dc7ffe498ca/_ds_bundle.js"></script>
+<script src="./image-slot.js"></script>
+<style>
+body{margin:0;background:#f6f3ee;color:#1a1d24;font-family:'Noto Sans TC',sans-serif;-webkit-font-smoothing:antialiased;font-size:15px}
+a{color:#1f2f86}
+a:hover{color:#9e5b33}
+::selection{background:rgba(176,103,58,.25)}
+[data-track]::-webkit-scrollbar{display:none}
+label.opt input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+label.opt:has(input:focus-visible){outline:2px solid #1f2f86;outline-offset:2px}
+@media (hover:hover) and (pointer:fine){html.cs-cur,html.cs-cur *{cursor:none!important}html.cs-cur input,html.cs-cur textarea,html.cs-cur select,html.cs-cur [contenteditable]{cursor:text!important}}
+</style>
+</helmet>
+<div ref="{{ rootRef }}" style="background:#f6f3ee;color:#1a1d24;font-family:'Noto Sans TC',sans-serif;min-height:100vh;overflow-x:clip">
+
+<header style="position:fixed;top:0;left:0;right:0;z-index:60;height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 clamp(20px,4vw,56px);background:{{ hdrBg }};border-bottom:1px solid {{ hdrLine }};transition:background .5s ease,border-color .5s ease">
+  <a href="#/" aria-label="重陞機電工程 首頁" style="display:flex;align-items:center;flex:none">
+    <img src="assets/logo.png" alt="重陞機電工程股份有限公司" style="height:{{ logoH }};width:auto;display:block;filter:{{ logoFilter }};transition:filter .5s ease">
+  </a>
+  <sc-if value="{{ desktop }}" hint-placeholder-val="{{ true }}">
+    <nav aria-label="主要導覽" style="display:flex;align-items:center;gap:clamp(12px,2.2vw,40px);flex-shrink:0">
+      <sc-for list="{{ navItems }}" as="n" hint-placeholder-count="4">
+        <a href="{{ n.href }}" aria-current="{{ n.cur }}" style="display:flex;align-items:flex-start;gap:6px;white-space:nowrap;flex-shrink:0;font-size:14px;letter-spacing:.12em;text-decoration:none;color:{{ hdrText }};padding:8px 0 7px;background-image:linear-gradient(#b0673a,#b0673a);background-repeat:no-repeat;background-position:0 100%;background-size:{{ n.line }} 1px;transition:color .3s,background-size .5s cubic-bezier(.19,1,.22,1)" style-hover="color:#b0673a;background-size:100% 1px">
+          <span style="font-family:'Barlow Condensed',sans-serif;font-size:10px;line-height:1;letter-spacing:.08em;color:#b0673a;opacity:{{ n.numOp }};transition:opacity .3s;margin-top:-1px">{{ n.no }}</span>{{ n.label }}
+        </a>
+      </sc-for>
+      <a href="#/contact" class="blueprint" style="display:inline-flex;align-items:center;gap:10px;white-space:nowrap;flex-shrink:0;height:42px;padding:0 clamp(14px,1.4vw,20px);background:#9e5b33;border-color:#9e5b33;color:#fff;font-size:14px;letter-spacing:.12em;text-decoration:none;transition:background .3s" style-hover="background:#874a27;color:#fff">
+        <i class="corner tl" style="color:{{ cornerC }}"></i><i class="corner tr" style="color:{{ cornerC }}"></i><i class="corner bl" style="color:{{ cornerC }}"></i><i class="corner br" style="color:{{ cornerC }}"></i>
+        聯絡我們
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+      </a>
+    </nav>
+  </sc-if>
+  <sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}">
+    <div style="display:flex;align-items:center;gap:8px">
+      <a href="#/contact" aria-label="聯絡我們" style="display:flex;align-items:center;justify-content:center;height:44px;padding:0 14px;background:#9e5b33;color:#fff;text-decoration:none;font-size:13px;letter-spacing:.1em">聯絡</a>
+      <button type="button" onClick="{{ toggleMenu }}" aria-label="開啟選單" aria-expanded="{{ menuOpen }}" style="width:44px;height:44px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;background:transparent;border:1px solid {{ hdrLine2 }};cursor:pointer;padding:0">
+        <span style="width:18px;height:1px;background:{{ hdrText }}"></span>
+        <span style="width:18px;height:1px;background:{{ hdrText }}"></span>
+      </button>
+    </div>
+  </sc-if>
+</header>
+
+<sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+  <div role="dialog" aria-label="網站選單" style="position:fixed;inset:0;z-index:70;background:#111a3d;color:#fff;display:flex;flex-direction:column;padding:0 24px 32px">
+    <div style="height:72px;display:flex;align-items:center;justify-content:space-between">
+      <img src="assets/logo.png" alt="重陞機電工程股份有限公司" style="height:16px;width:auto;filter:brightness(0) invert(1)">
+      <button type="button" onClick="{{ toggleMenu }}" aria-label="關閉選單" style="width:44px;height:44px;background:transparent;border:1px solid rgba(255,255,255,.3);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+      </button>
+    </div>
+    <nav style="display:flex;flex-direction:column;margin-top:40px">
+      <sc-for list="{{ menuItems }}" as="n">
+        <a data-menu-item="" href="{{ n.href }}" onClick="{{ closeMenu }}" style="display:flex;align-items:baseline;gap:18px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.14);color:#fff;text-decoration:none">
+          <span style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.2em;color:#e0a57f;width:24px">{{ n.no }}</span>
+          <span style="font-family:'Noto Serif TC',serif;font-size:28px;letter-spacing:.08em">{{ n.label }}</span>
+        </a>
+      </sc-for>
+    </nav>
+    <div data-menu-item="" style="margin-top:auto;font-size:13px;line-height:2;color:rgba(255,255,255,.75);letter-spacing:.06em">
+      <div>cs@ycgroup.com.tw</div>
+      <div>傳真 03-518-2727</div>
+      <div>新竹縣竹北市環科一路 23 號 8 樓之 5</div>
+    </div>
+  </div>
+</sc-if>
+
+<div data-curtain="" aria-hidden="true" style="position:fixed;inset:0;z-index:90;background:#111a3d;transform:translateY(100%);pointer-events:none;display:flex;align-items:center;justify-content:center">
+  <div style="display:flex;align-items:center;gap:18px;color:rgba(255,255,255,.85);font-family:'Barlow Condensed',sans-serif;font-size:14px;letter-spacing:.3em">
+    <span style="width:40px;height:1px;background:#b0673a"></span>{{ curtainLabel }}<span style="width:40px;height:1px;background:#b0673a"></span>
+  </div>
+</div>
+
+<sc-if value="{{ followOn }}" hint-placeholder-val="{{ false }}">
+  <div data-follow="" aria-hidden="true" style="position:fixed;left:0;top:0;z-index:55;width:88px;height:88px;border-radius:50%;background:#111a3d;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;pointer-events:none;opacity:0;transition:opacity .3s ease,transform .22s cubic-bezier(.2,.7,.2,1);font-family:'Barlow Condensed',sans-serif;letter-spacing:.2em;font-size:12px">
+    <span>DRAG</span><span style="font-family:'Noto Sans TC';font-size:11px;letter-spacing:.1em;color:#e0a57f">拖曳 · 點擊</span>
+  </div>
+</sc-if>
+
+<main>
+<!-- ========== HOME ========== -->
+<sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+
+  <section aria-label="首屏" style="position:relative;height:100svh;min-height:620px;background:#0e1633;overflow:hidden;color:#fff">
+    <sc-if value="{{ heroSingle }}" hint-placeholder-val="{{ false }}">
+      <div data-hero-par="" style="position:absolute;left:0;right:0;top:-6%;bottom:-6%"><div data-hero-strip="" style="position:absolute;inset:0;overflow:hidden"><div data-hero-img="" style="position:absolute;inset:0;transform:scale(1.05)"><image-slot id="hero-main" src="dsc03879-mudswkan-jbs0.jpg" shape="rect" placeholder="首屏主視覺照片"></image-slot></div></div></div>
+    </sc-if>
+    <sc-if value="{{ heroStrips }}" hint-placeholder-val="{{ true }}">
+    <div data-hero-par="" style="position:absolute;left:0;right:0;top:-6%;bottom:-6%;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:1px;background:#0e1633">
+      <sc-for list="{{ strips }}" as="s" hint-placeholder-count="7">
+        <div data-hero-strip="" onMouseEnter="{{ s.enter }}" onMouseLeave="{{ s.leave }}" style="position:relative;overflow:hidden;background:#1a2450">
+          <div data-hero-img="" style="position:absolute;inset:0;transform:scale(1.05)"><image-slot id="hero-{{ s.code }}" src="{{ s.src }}" shape="rect" placeholder="{{ s.alt }}"></image-slot></div>
+          <div style="position:absolute;inset:0;pointer-events:none;background:#0e1633;opacity:{{ s.op }};transition:opacity .7s cubic-bezier(.2,.7,.2,1)"></div>
+          <div data-hero-fade="0" style="position:absolute;pointer-events:none;top:calc(6svh + 96px);left:0;right:0;display:flex;justify-content:center"><div style="writing-mode:vertical-rl;display:flex;flex-wrap:nowrap;white-space:nowrap;align-items:center;gap:10px;font-family:'Noto Serif TC',serif;font-size:clamp(13px,1vw,17px);font-weight:400;letter-spacing:.14em;color:#fff;opacity:.5;text-shadow:0 1px 12px rgba(14,22,51,.6)"><span style="font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:400;letter-spacing:.24em;color:#e0a57f">{{ s.code }}</span>{{ s.lbl }}</div></div>
+        </div>
+      </sc-for>
+    </div>
+    </sc-if>
+    <div style="position: absolute; inset: 0; background: linear-gradient(180deg,rgba(14,22,51,0) 35%,rgba(14,22,51,.78) 100%),linear-gradient(90deg,rgba(14,22,51,.55) 0%,rgba(14,22,51,0) 60%); pointer-events: none; left: -6px; top: 3px"></div>
+
+    <div style="position:relative;z-index:2;height:100%;max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px) clamp(32px,7vh,72px);display:flex;flex-direction:column;justify-content:flex-end;pointer-events:none">
+      <div data-hero-fade="0" style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.3em;color:#e0a57f">CHONG-SHENG M&amp;E ENGINEERING — SINCE 1995</div>
+      <h1 style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(36px,6.2vw,92px);line-height:1.28;letter-spacing:.05em;margin:22px 0 0;color:#fff">
+        <span style="display:block;overflow:hidden;padding-bottom:.06em"><span data-hero-line="" style="display:block">讓看不見的系統，</span></span>
+        <span style="display:block;overflow:hidden;padding-bottom:.06em"><span data-hero-line="" style="display:block">支撐看得見的建築。</span></span>
+      </h1>
+      <div style="display:flex;align-items:center;gap:14px;margin-top:clamp(20px,3vh,32px);max-width:760px">
+        <span data-hero-grow="" style="width:1px;height:14px;background:rgba(255,255,255,.7);flex:none"></span>
+        <span data-hero-grow="" style="flex:1;height:1px;background:rgba(255,255,255,.55);transform-origin:left"></span>
+        <span data-hero-fade="1" style="font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:.24em;color:rgba(255,255,255,.85);white-space:nowrap">E · P · HVAC · LV · FP</span>
+        <span data-hero-grow="" style="flex:1;height:1px;background:rgba(255,255,255,.55);transform-origin:right"></span>
+        <span data-hero-grow="" style="width:1px;height:14px;background:rgba(255,255,255,.7);flex:none"></span>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:28px;margin-top:clamp(20px,3vh,32px)">
+        <p data-hero-fade="1" style="margin:0;max-width:520px;font-size:clamp(14px,1.2vw,16px);line-height:2;letter-spacing:.06em;color:rgba(255,255,255,.9);text-wrap:pretty">電氣、給排水、空調、弱電、消防——重陞機電從規劃、跨工種協調、現場施工到驗收交付，整合建築裡每一套看不見的系統。</p>
+        <div data-hero-fade="1" style="display:flex;flex-wrap:wrap;gap:14px;pointer-events:auto">
+          <a href="#/works" class="blueprint" style="display:inline-flex;align-items:center;gap:12px;height:54px;padding:0 28px;background:#9e5b33;border-color:#9e5b33;color:#fff;text-decoration:none;font-size:15px;letter-spacing:.14em;transition:background .3s" style-hover="background:#874a27;color:#fff">
+            <i class="corner tl" style="color:rgba(255,255,255,.7)"></i><i class="corner tr" style="color:rgba(255,255,255,.7)"></i><i class="corner bl" style="color:rgba(255,255,255,.7)"></i><i class="corner br" style="color:rgba(255,255,255,.7)"></i>
+            工程實績
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </a>
+          <a href="#/contact" style="display:inline-flex;align-items:center;gap:12px;height:54px;padding:0 28px;border:1px solid rgba(255,255,255,.55);color:#fff;text-decoration:none;font-size:15px;letter-spacing:.14em;transition:background .3s,border-color .3s" style-hover="background:rgba(255,255,255,.1);border-color:#fff;color:#fff">聯絡我們</a>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" data-hero-fade="1" onClick="{{ exploreDown }}" aria-label="向下探索" style="position:absolute;z-index:3;right:clamp(20px,4vw,56px);bottom:clamp(170px,26vh,240px);display:flex;flex-direction:column;align-items:center;gap:14px;background:transparent;border:0;color:#fff;cursor:pointer;padding:8px">
+      <span style="writing-mode:vertical-rl;font-size:12px;letter-spacing:.36em">向下探索</span>
+      <span style="position:relative;width:1px;height:72px;background:rgba(255,255,255,.3);overflow:hidden"><span data-scroll-dot="" style="position:absolute;left:0;top:0;width:1px;height:100%;background:#e0a57f"></span></span>
+      <span style="font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:.24em;color:rgba(255,255,255,.7)">SCROLL</span>
+    </button>
+  </section>
+
+  <section data-after-hero="" style="padding:clamp(96px,13vw,190px) 0 clamp(72px,9vw,140px);background:#f6f3ee">
+    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:clamp(48px,7vw,112px);align-items:end">
+        <div>
+          <div data-rv="up" style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.28em;color:#8f4f28">01 — ABOUT</div>
+          <h2 data-rv="up" data-rv-delay="80" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(34px,4.6vw,64px);line-height:1.4;letter-spacing:.05em;color:#141c3f;margin:28px 0 0">提前解決風險，<br>是我們的工作。</h2>
+          <p data-rv="up" data-rv-delay="160" style="margin:36px 0 0;max-width:540px;font-size:15px;line-height:2.1;letter-spacing:.05em;color:#4a4740;text-wrap:pretty">重陞機電的前身為民國 84 年成立的重生水電，民國 99 年轉型為機電工程股份有限公司。從觀光飯店、集合住宅、科技廠房到學校與公共工程，我們在現場累積施工與管理經驗，秉持「穩健踏實，誠信經營」，把電、水、空調、弱電與消防整合成一套可以被信任的系統。</p>
+          <a data-rv="up" data-rv-delay="220" href="#/about" style="display:inline-flex;align-items:center;gap:12px;margin-top:28px;font-size:14px;letter-spacing:.14em;color:#1f2f86;text-decoration:none;border-bottom:1px solid #1f2f86;padding-bottom:6px" style-hover="color:#9e5b33;border-color:#9e5b33">關於重陞<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+        </div>
+        <figure style="margin:0">
+          <div class="blueprint" style="position:relative;padding:0">
+            <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+            <div data-rv="mask" style="position:relative;aspect-ratio:1270/879;overflow:hidden">
+              <image-slot data-rv-img="" id="home-team" src="assets/team-review.jpg" shape="rect" placeholder="團隊照片" style="position:absolute;inset:0"></image-slot>
+            </div>
+          </div>
+          <figcaption style="display:flex;justify-content:space-between;gap:12px;margin-top:12px;font-size:12px;letter-spacing:.08em;color:#6b675f">
+            
+            <sc-if value="{{ showFlags }}"></sc-if>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:1px;background:rgba(26,29,36,.14);border:1px solid rgba(26,29,36,.14);margin-top:clamp(72px,9vw,128px)">
+        <sc-for list="{{ stats }}" as="st" hint-placeholder-count="4">
+          <div data-rv="up" data-rv-delay="{{ st.delay }}" style="background:#f6f3ee;padding:clamp(24px,3vw,40px) clamp(20px,2.4vw,32px)">
+            <div style="display:flex;align-items:baseline;gap:6px;color:#141c3f">
+              <span style="font-size:14px;letter-spacing:.06em;color:#6b675f">{{ st.pre }}</span>
+              <span data-count="{{ st.num }}" style="font-family:'Barlow Condensed',sans-serif;font-weight:400;font-size:clamp(56px,6vw,84px);line-height:1;letter-spacing:-.01em">{{ st.num }}</span>
+              <span style="font-family:'Barlow Condensed',sans-serif;font-size:28px;color:#b0673a">{{ st.suf }}</span>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:14px;font-size:14px;letter-spacing:.1em;color:#4a4740">{{ st.label }}
+              <sc-if value="{{ showFlags }}"></sc-if>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section data-home-svc="" style="background:#f6f3ee;border-top:1px solid rgba(26,29,36,.12);padding-top:clamp(80px,10vw,150px)">
+    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px">
+        <div>
+          <div data-rv="up" style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.28em;color:#8f4f28">02 — SERVICES</div>
+          <h2 data-rv="up" data-rv-delay="80" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(30px,3.8vw,52px);line-height:1.45;letter-spacing:.05em;color:#141c3f;margin:24px 0 0">五套系統，<br>讓一棟建築開始運作。</h2>
+        </div>
+        
+      </div>
+
+      <sc-if value="{{ desktop }}" hint-placeholder-val="{{ true }}">
+        <div style="display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(40px,6vw,96px);margin-top:24px">
+          <div style="position:sticky;top:72px;height:calc(100vh - 72px);display:flex;align-items:center;padding:32px 0">
+            <div data-big="" class="blueprint" style="position:relative;width:100%;height:min(78vh,680px);padding:56px 36px 64px">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <div style="position:absolute;top:16px;left:18px;right:18px;display:flex;justify-content:space-between;font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:.22em;color:#6b675f"><span>ISOMETRIC · 建築系統示意</span><span>NOT TO SCALE</span></div>
+              {{ bigDrawing }}
+              <div style="position:absolute;left:18px;right:18px;bottom:14px;display:flex;justify-content:space-between;align-items:center;gap:12px">
+                <div style="display:flex;align-items:baseline;gap:12px">
+                  <span style="font-family:'Barlow Condensed',sans-serif;font-size:28px;line-height:1;color:#b0673a">{{ activeSvc.no }}</span>
+                  <span style="font-family:'Noto Serif TC',serif;font-size:18px;letter-spacing:.1em;color:#141c3f;white-space:nowrap">{{ activeSvc.name }}</span>
+                </div>
+                <div style="display:flex;flex-wrap:wrap;justify-content:flex-end;gap:4px 14px">
+                  <sc-for list="{{ legend }}" as="lg">
+                    <span style="display:flex;align-items:center;gap:6px;white-space:nowrap;font-size:12px;letter-spacing:.06em;color:{{ lg.c }};transition:color .4s"><span style="width:14px;height:2px;background:{{ lg.c }};transition:background .4s"></span>{{ lg.n }}</span>
+                  </sc-for>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <sc-for list="{{ services }}" as="s" hint-placeholder-count="5">
+              <article data-svc-panel="" style="min-height:92vh;display:flex;flex-direction:column;justify-content:center;padding:64px 0">
+                <div style="display:flex;align-items:baseline;gap:18px">
+                  <span data-rv="up" style="font-family:'Barlow Condensed',sans-serif;font-weight:300;font-size:72px;line-height:1;color:#1f2f86">{{ s.no }}</span>
+                  <span data-rv="up" data-rv-delay="60" style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.28em;color:#6b675f">{{ s.en }}</span>
+                </div>
+                <h3 data-rv="up" data-rv-delay="100" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(30px,3vw,42px);letter-spacing:.08em;color:#141c3f;margin:18px 0 0">{{ s.name }}</h3>
+                <p data-rv="up" data-rv-delay="140" style="margin:14px 0 0;font-family:'Noto Serif TC',serif;font-size:18px;letter-spacing:.06em;color:#8f4f28">{{ s.lead }}</p>
+                <p data-rv="up" data-rv-delay="180" style="margin:22px 0 0;max-width:500px;font-size:15px;line-height:2;letter-spacing:.05em;color:#4a4740;text-wrap:pretty">{{ s.desc }}</p>
+                <div style="display:grid;grid-template-columns:minmax(0,1fr) 180px;gap:28px;margin-top:32px;align-items:end">
+                  <ul data-rv="up" data-rv-delay="220" style="list-style:none;margin:0;padding:0;border-top:1px solid rgba(26,29,36,.16)">
+                    <sc-for list="{{ s.scope }}" as="it">
+                      <li style="display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid rgba(26,29,36,.16);font-size:14px;letter-spacing:.06em"><span style="width:6px;height:1px;background:#b0673a"></span>{{ it }}</li>
+                    </sc-for>
+                  </ul>
+                  <figure style="margin:0">
+                    <div data-rv="mask" style="position:relative;aspect-ratio:3/4;overflow:hidden;background:#e3dfd7"><image-slot data-rv-img="" id="svc2-{{ s.k }}" src="{{ s.img }}" shape="rect" placeholder="{{ s.name }}照片" style="position:absolute;inset:0"></image-slot></div>
+                    <figcaption style="margin-top:8px;font-size:11px;letter-spacing:.06em;color:#6b675f">{{ s.alt }}</figcaption>
+                  </figure>
+                </div>
+                <a href="{{ s.worksHref }}" style="align-self:flex-start;display:inline-flex;align-items:center;gap:10px;margin-top:28px;font-size:13px;letter-spacing:.12em;color:#1f2f86;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:4px" style-hover="color:#9e5b33">{{ s.worksLabel }}<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+              </article>
+            </sc-for>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}">
+        <div style="margin-top:40px;padding-bottom:40px">
+          <sc-for list="{{ services }}" as="s">
+            <article style="border-top:1px solid rgba(26,29,36,.16);padding:36px 0">
+              <div style="display:flex;justify-content:space-between;align-items:baseline">
+                <span style="font-family:'Barlow Condensed',sans-serif;font-weight:300;font-size:48px;line-height:1;color:#1f2f86">{{ s.no }}</span>
+                <span style="font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:.24em;color:#6b675f">{{ s.en }}</span>
+              </div>
+              <h3 style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:28px;letter-spacing:.08em;color:#141c3f;margin:12px 0 0">{{ s.name }}</h3>
+              <p style="margin:8px 0 0;font-family:'Noto Serif TC',serif;font-size:16px;color:#8f4f28;letter-spacing:.04em">{{ s.lead }}</p>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px">
+                <div data-rv="mask" style="position:relative;aspect-ratio:3/4;overflow:hidden;background:#e3dfd7"><image-slot data-rv-img="" id="svc2-{{ s.k }}" src="{{ s.img }}" shape="rect" placeholder="{{ s.name }}照片" style="position:absolute;inset:0"></image-slot></div>
+                <div data-rv="draw" class="blueprint" style="position:relative;aspect-ratio:3/4;padding:14px 8px">
+                  <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+                  {{ s.mini }}
+                </div>
+              </div>
+              <p style="margin:18px 0 0;font-size:14px;line-height:1.95;letter-spacing:.04em;color:#4a4740">{{ s.desc }}</p>
+              <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px">
+                <sc-for list="{{ s.scope }}" as="it"><span style="font-size:12px;letter-spacing:.06em;padding:6px 10px;border:1px solid rgba(26,29,36,.2)">{{ it }}</span></sc-for>
+              </div>
+            </article>
+          </sc-for>
+        </div>
+      </sc-if>
+    </div>
+  </section>
+
+  <section style="background:#ebe7e0;padding:clamp(80px,10vw,150px) 0 clamp(72px,9vw,130px)">
+    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px">
+        <div>
+          <div data-rv="up" style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.28em;color:#8f4f28">03 — SELECTED WORKS</div>
+          <h2 data-rv="up" data-rv-delay="80" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(30px,3.8vw,52px);line-height:1.45;letter-spacing:.05em;color:#141c3f;margin:24px 0 0">每一件實績，<br>都藏在牆與樓板之間。</h2>
+        </div>
+        <sc-if value="{{ desktop }}" hint-placeholder-val="{{ true }}">
+          <div style="display:flex;align-items:center;gap:20px">
+            <div style="font-family:'Barlow Condensed',sans-serif;font-size:18px;letter-spacing:.12em;color:#141c3f"><span style="font-size:28px">{{ featNo }}</span> / {{ featTotal }}</div>
+            <button type="button" onClick="{{ featPrev }}" aria-label="上一件" style="width:52px;height:52px;border:1px solid rgba(26,29,36,.3);background:transparent;color:#141c3f;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .3s,color .3s" style-hover="background:#141c3f;color:#fff"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg></button>
+            <button type="button" onClick="{{ featNext }}" aria-label="下一件" style="width:52px;height:52px;border:1px solid rgba(26,29,36,.3);background:transparent;color:#141c3f;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .3s,color .3s" style-hover="background:#141c3f;color:#fff"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button>
+          </div>
+        </sc-if>
+      </div>
+    </div>
+
+    <sc-if value="{{ desktop }}" hint-placeholder-val="{{ true }}">
+      <div data-track="" onScroll="{{ onTrackScroll }}" onPointerDown="{{ onDown }}" onPointerMove="{{ onTrackMove }}" onPointerLeave="{{ onTrackLeave }}" onClickCapture="{{ onTrackClick }}" onDragStart="{{ noDrag }}" style="display:flex;gap:28px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-top:56px;padding:12px max(56px,calc((100vw - 1360px) / 2 + 56px)) 16px;scroll-padding-left:max(56px,calc((100vw - 1360px) / 2 + 56px));cursor:grab;user-select:none">
+        <sc-for list="{{ featured }}" as="c" hint-placeholder-count="3">
+          <a href="{{ c.href }}" draggable="false" style="flex:none;width:clamp(320px,34vw,500px);scroll-snap-align:start;color:#1a1d24;text-decoration:none;display:block" style-hover="color:#1a1d24">
+            <div class="blueprint" style="position:relative">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              <div style="position:relative;aspect-ratio:4/3;overflow:hidden;background:#e3dfd7">
+                <image-slot id="{{ c.slot }}" src="{{ c.img }}" shape="rect" placeholder="案例照片待提供" style="pointer-events:none"></image-slot>
+                <div style="position:absolute;left:14px;top:12px;font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:.22em;color:#6b675f;pointer-events:none">{{ c.idx }}</div>
+              </div>
+            </div>
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-top:22px">
+              <span style="font-family:'Barlow Condensed',sans-serif;font-weight:300;font-size:52px;line-height:1;color:#1f2f86">{{ c.yearLabel }}</span>
+              <span style="font-size:12px;letter-spacing:.14em;color:#6b675f">{{ c.type }}</span>
+            </div>
+            <h3 style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:20px;line-height:1.6;letter-spacing:.06em;margin:12px 0 0;color:#141c3f;text-wrap:pretty">{{ c.name }}</h3>
+            <p style="margin:8px 0 0;font-size:13px;line-height:1.9;color:#6b675f;letter-spacing:.04em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">{{ c.items }}</p>
+            <div style="display:flex;gap:4px;margin-top:16px">
+              <sc-for list="{{ c.marks }}" as="m"><span style="font-size:11px;letter-spacing:.04em;padding:3px 7px;border:1px solid {{ m.bd }};background:{{ m.bg }};color:{{ m.c }}">{{ m.n }}</span></sc-for>
+            </div>
+          </a>
+        </sc-for>
+        <a href="#/works" draggable="false" style="flex:none;width:clamp(260px,24vw,340px);scroll-snap-align:start;display:flex;flex-direction:column;justify-content:center;gap:18px;padding:40px;border:1px solid rgba(26,29,36,.2);color:#141c3f;text-decoration:none;transition:background .4s,color .4s" style-hover="background:#141c3f;color:#fff">
+          <span style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.24em">ALL WORKS</span>
+          <span style="font-family:'Noto Serif TC',serif;font-size:26px;letter-spacing:.08em;line-height:1.5">查看全部<br>{{ worksTotal }} 件實績</span>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+      </div>
+      <div style="max-width:1360px;margin:28px auto 0;padding:0 clamp(20px,4vw,56px);display:flex;align-items:center;gap:20px">
+        <div style="position:relative;flex:1;height:1px;background:rgba(26,29,36,.18)"><div data-track-fill="" style="position:absolute;left:0;top:-1px;height:3px;width:100%;background:#1f2f86;transform-origin:left;transform:scaleX(.1);transition:transform .25s ease-out"></div></div>
+        <span style="font-size:12px;letter-spacing:.14em;color:#6b675f">拖曳、滑動或使用箭頭瀏覽</span>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}">
+      <div style="padding:0 20px;margin-top:36px;display:flex;flex-direction:column;gap:36px">
+        <sc-for list="{{ featuredMobile }}" as="c">
+          <a data-rv="up" href="{{ c.href }}" style="display:block;color:#1a1d24;text-decoration:none">
+            <div style="position:relative;aspect-ratio:4/3;overflow:hidden;background:#e3dfd7">
+              <image-slot id="{{ c.slot }}" src="{{ c.img }}" shape="rect" placeholder="案例照片待提供" style="pointer-events:none"></image-slot>
+            </div>
+            <div style="display:flex;align-items:baseline;justify-content:space-between;margin-top:14px">
+              <span style="font-family:'Barlow Condensed',sans-serif;font-weight:300;font-size:40px;line-height:1;color:#1f2f86">{{ c.yearLabel }}</span>
+              <span style="font-size:12px;letter-spacing:.12em;color:#6b675f">{{ c.type }}</span>
+            </div>
+            <h3 style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:19px;line-height:1.6;letter-spacing:.05em;margin:8px 0 0;color:#141c3f">{{ c.name }}</h3>
+            <p style="margin:6px 0 0;font-size:13px;line-height:1.8;color:#6b675f">{{ c.items }}</p>
+          </a>
+        </sc-for>
+        <a href="#/works" style="display:flex;align-items:center;justify-content:space-between;height:56px;padding:0 20px;border:1px solid #141c3f;color:#141c3f;text-decoration:none;font-size:15px;letter-spacing:.12em">查看全部 {{ worksTotal }} 件實績<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+      </div>
+    </sc-if>
+  </section>
+
+  <sc-if value="{{ desktop }}" hint-placeholder-val="{{ true }}">
+    <section data-proc="" style="position:relative;height:460vh;background:#111a3d;color:#fff">
+      <div style="position:sticky;top:0;height:100vh;padding-top:72px;display:flex;flex-direction:column;overflow:hidden">
+        <div style="max-width:1360px;width:100%;margin:0 auto;padding:clamp(32px,6vh,64px) clamp(20px,4vw,56px) 0;display:flex;flex-direction:column;flex:1;min-height:0">
+          <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px">
+            <div>
+              <div style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.28em;color:#e0a57f">04 — PROCESS</div>
+              <h2 style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(28px,3.2vw,44px);line-height:1.45;letter-spacing:.05em;color:#fff;margin:18px 0 0">從需求到交付，五個確認點。</h2>
+            </div>
+            <span style="font-size:12px;letter-spacing:.14em;color:rgba(255,255,255,.7)">繼續捲動，或點選步驟</span>
+          </div>
+          <div style="position:relative;margin-top:clamp(28px,5vh,56px)">
+            <div style="position:absolute;left:0;right:0;top:7px;height:1px;background:rgba(255,255,255,.22)"></div>
+            <div data-proc-fill="" style="position:absolute;left:0;right:0;top:6px;height:3px;background:#b0673a;transform-origin:left;transform:scaleX(.1)"></div>
+            <div style="position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr))">
+              <sc-for list="{{ steps }}" as="p" hint-placeholder-count="5">
+                <button type="button" onClick="{{ p.go }}" aria-current="{{ p.cur }}" style="display:flex;flex-direction:column;align-items:center;gap:14px;background:transparent;border:0;color:{{ p.c }};cursor:pointer;padding:0;transition:color .4s">
+                  <span style="width:15px;height:15px;border:1px solid {{ p.nodeBd }};background:{{ p.nodeBg }};transition:background .4s,border-color .4s"></span>
+                  <span style="font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:.2em">{{ p.no }} · {{ p.en }}</span>
+                  <span style="font-size:15px;letter-spacing:.14em">{{ p.t }}</span>
+                </button>
+              </sc-for>
+            </div>
+          </div>
+          <div data-proc-panel="" style="flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,6vw,96px);align-items:center;padding:clamp(24px,4vh,48px) 0 clamp(24px,5vh,56px)">
+            <div>
+              <div style="display:flex;align-items:baseline;gap:18px">
+                <span style="font-family:'Barlow Condensed',sans-serif;font-weight:300;font-size:clamp(88px,11vw,150px);line-height:.9;color:#e0a57f">{{ proc.no }}</span>
+                <span style="font-size:13px;letter-spacing:.2em;color:rgba(255,255,255,.7)">{{ proc.stage }}</span>
+              </div>
+              <h3 style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(28px,3vw,42px);letter-spacing:.1em;color:#fff;margin:20px 0 0">{{ proc.t }}</h3>
+              <p style="margin:16px 0 0;max-width:460px;font-size:15px;line-height:2;letter-spacing:.05em;color:rgba(255,255,255,.85)">{{ proc.desc }}</p>
+              <ul style="list-style:none;margin:28px 0 0;padding:0;max-width:460px;border-top:1px solid rgba(255,255,255,.2)">
+                <sc-for list="{{ proc.items }}" as="it">
+                  <li style="display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.2);font-size:15px;letter-spacing:.1em"><span style="width:8px;height:8px;border:1px solid #e0a57f"></span>{{ it }}</li>
+                </sc-for>
+              </ul>
+            </div>
+            <div data-panel-img="" style="position:relative;height:min(52vh,480px);overflow:hidden;background:#1a2450">
+              <sc-for list="{{ steps }}" as="p"><div style="position:absolute;inset:0;opacity:{{ p.show }};pointer-events:{{ p.pe }};transition:opacity .6s ease"><image-slot id="proc-{{ p.no }}" src="{{ p.img }}" shape="rect" placeholder="{{ p.t }}照片"></image-slot></div></sc-for>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </sc-if>
+  <sc-if value="{{ mobile }}" hint-placeholder-val="{{ false }}">
+    <section style="background:#111a3d;color:#fff;padding:72px 20px">
+      <div style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.28em;color:#e0a57f">04 — PROCESS</div>
+      <h2 style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:28px;line-height:1.5;letter-spacing:.05em;color:#fff;margin:16px 0 32px">從需求到交付，<br>五個確認點。</h2>
+      <sc-for list="{{ steps }}" as="p">
+        <div style="border-top:1px solid rgba(255,255,255,.2)">
+          <button type="button" onClick="{{ p.open }}" aria-expanded="{{ p.isOpen }}" style="width:100%;min-height:64px;display:flex;align-items:center;gap:16px;background:transparent;border:0;color:#fff;cursor:pointer;padding:12px 0;text-align:left">
+            <span style="font-family:'Barlow Condensed',sans-serif;font-size:24px;color:#e0a57f;width:32px">{{ p.no }}</span>
+            <span style="flex:1;font-size:18px;letter-spacing:.12em">{{ p.t }}</span>
+            <span style="font-size:22px;font-weight:300;width:20px;text-align:center">{{ p.sign }}</span>
+          </button>
+          <sc-if value="{{ p.isOpen }}">
+            <div data-proc-open="" style="padding:0 0 24px 48px">
+              <p style="margin:0;font-size:14px;line-height:1.95;color:rgba(255,255,255,.85)">{{ p.desc }}</p>
+              <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px"><sc-for list="{{ p.items }}" as="it"><span style="font-size:12px;padding:6px 10px;border:1px solid rgba(255,255,255,.35)">{{ it }}</span></sc-for></div>
+              <div style="position:relative;aspect-ratio:4/3;overflow:hidden;margin-top:16px;background:#1a2450"><image-slot id="proc-m{{ p.no }}" src="{{ p.img }}" shape="rect" placeholder="{{ p.t }}照片"></image-slot></div>
+            </div>
+          </sc-if>
+        </div>
+      </sc-for>
+    </section>
+  </sc-if>
+
+  <section style="background:#f6f3ee;padding:clamp(96px,13vw,190px) 0">
+    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+      <div data-rv="up" style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.28em;color:#8f4f28">05 — CONTACT</div>
+      <h2 data-rv="up" data-rv-delay="80" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(34px,5.4vw,78px);line-height:1.4;letter-spacing:.05em;color:#141c3f;margin:28px 0 0">下一棟建築的系統，<br>從一次對話開始。</h2>
+      <div data-rv="line" style="height:1px;background:rgba(26,29,36,.22);margin-top:clamp(40px,5vw,64px);transform-origin:left"></div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:28px;margin-top:32px">
+        <p data-rv="up" style="margin:0;max-width:520px;font-size:15px;line-height:2;letter-spacing:.05em;color:#4a4740">告訴我們案型、規模與時程。<br>從審圖階段開始，我們協助您把界面與風險先整理清楚。</p>
+        <div data-rv="up" data-rv-delay="100" style="display:flex;flex-wrap:wrap;gap:14px">
+          <a href="#/contact" class="blueprint" style="display:inline-flex;align-items:center;gap:12px;height:56px;padding:0 30px;background:#141c3f;border-color:#141c3f;color:#fff;text-decoration:none;font-size:15px;letter-spacing:.14em;transition:background .3s" style-hover="background:#1f2f86;color:#fff">
+            <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+            聯絡我們<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </a>
+          <a href="mailto:cs@ycgroup.com.tw" style="display:inline-flex;align-items:center;height:56px;padding:0 24px;border:1px solid rgba(26,29,36,.3);color:#141c3f;text-decoration:none;font-size:15px;letter-spacing:.08em" style-hover="border-color:#141c3f;color:#141c3f">cs@ycgroup.com.tw</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</sc-if>
+
+<!-- ========== ABOUT ========== -->
+<sc-if value="{{ isAbout }}" hint-placeholder-val="{{ false }}">
+  <section style="padding:clamp(140px,16vw,210px) 0 clamp(56px,7vw,96px)">
+    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+      <div data-rv="up" style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.28em;color:#8f4f28">ABOUT — 關於重陞</div>
+      <h1 data-rv="up" data-rv-delay="80" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(40px,6vw,84px);line-height:1.35;letter-spacing:.05em;color:#141c3f;margin:24px 0 0">穩健踏實，<br>誠信經營。</h1>
+      <div data-rv="line" style="height:1px;background:rgba(26,29,36,.22);margin-top:48px;transform-origin:left"></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(40px,6vw,96px);margin-top:48px">
+        <div data-rv="up" style="font-size:15px;line-height:2.1;letter-spacing:.05em;color:#4a4740;text-wrap:pretty">
+          <p style="margin:0">重生水電成立於民國八十四年一月。因應大環境的變遷與發展，於民國九十九年轉型為機電工程股份有限公司，更名為重陞機電工程股份有限公司。</p>
+          <p style="margin:20px 0 0">多年來，我們歷經海內外工程的淬鍊，在機電領域累積現場施工技術與管理經驗。今後仍將秉持「穩健踏實，誠信經營」的作風，引進更先進的施工技術與專業設備，務求各項工程圓滿完成。</p>
+          <sc-if value="{{ showFlags }}"></sc-if>
+        </div>
+        <figure style="margin:0">
+          <div data-rv="mask" style="position:relative;aspect-ratio:1270/879;overflow:hidden"><image-slot data-rv-img="" id="about-team" src="assets/team-review.jpg" shape="rect" placeholder="團隊照片" style="position:absolute;inset:0"></image-slot></div>
+          
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:clamp(56px,7vw,110px) 0;border-top:1px solid rgba(26,29,36,.12)">
+    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+      <h2 data-rv="up" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(26px,3vw,38px);letter-spacing:.08em;color:#141c3f;margin:0">沿革</h2>
+      <ol style="list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));border-top:1px solid #141c3f">
+        <sc-for list="{{ timeline }}" as="t" hint-placeholder-count="6">
+          <li data-rv="up" data-rv-delay="{{ t.delay }}" style="position:relative;padding:28px 20px 24px 0;border-bottom:1px solid rgba(26,29,36,.12)">
+            <span style="position:absolute;top:-5px;left:0;width:9px;height:9px;background:#f6f3ee;border:1px solid #141c3f"></span>
+            <div style="font-family:'Barlow Condensed',sans-serif;font-weight:300;font-size:44px;line-height:1;color:#1f2f86">{{ t.y }}</div>
+            <div style="margin-top:14px;font-size:15px;letter-spacing:.08em;color:#141c3f">{{ t.t }}</div>
+            <div style="margin-top:6px;font-size:13px;line-height:1.8;color:#6b675f">{{ t.d }}</div>
+          </li>
+        </sc-for>
+      </ol>
+    </div>
+  </section>
+
+  <section style="padding:clamp(56px,7vw,110px) 0;border-top:1px solid rgba(26,29,36,.12)">
+    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+      <h2 data-rv="up" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(26px,3vw,38px);letter-spacing:.08em;color:#141c3f;margin:0">組織架構</h2>
+      <div style="display:flex;flex-direction:column;align-items:center;margin-top:48px">
+        <div data-rv="up" class="blueprint" style="padding:14px 40px;font-size:16px;letter-spacing:.3em;color:#141c3f"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>執行長</div>
+        <span style="width:1px;height:28px;background:rgba(26,29,36,.3)"></span>
+        <div data-rv="up" data-rv-delay="80" class="blueprint" style="padding:14px 40px;font-size:16px;letter-spacing:.3em;color:#141c3f"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>總經理</div>
+        <span style="width:1px;height:28px;background:rgba(26,29,36,.3)"></span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1px;background:rgba(26,29,36,.18);border:1px solid rgba(26,29,36,.18)">
+        <sc-for list="{{ depts }}" as="d">
+          <div data-rv="up" data-rv-delay="{{ d.delay }}" style="background:#f6f3ee;padding:28px">
+            <div style="font-family:'Noto Serif TC',serif;font-size:22px;letter-spacing:.12em;color:#141c3f">{{ d.n }}</div>
+            <p style="margin:14px 0 0;font-size:14px;line-height:2;color:#4a4740">{{ d.d }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section data-people="" aria-label="重陞的人" style="position:relative;height:{{ peopleH }};background:#0e1633;color:#fff">
+    <div style="position:sticky;top:0;height:100vh;overflow:hidden">
+      <img data-people-img="" src="assets/team-collage-web.jpg" alt="重陞機電團隊尾牙與活動合影" style="position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:50% 58%;filter:blur({{ peopleBlur }});transform:scale(1.06)">
+      <div data-people-ov="" style="position:absolute;inset:0;background:#0e1633;opacity:{{ peopleOv }}"></div>
+      <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(14,22,51,.75) 0%,rgba(14,22,51,0) 45%)"></div>
+      <div data-people-q="" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:96px clamp(20px,5vw,72px) 48px">
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.3em;color:#e0a57f">PEOPLE</div>
+        <p style="font-family:'Noto Serif TC',serif;font-size:clamp(19px,2.1vw,30px);line-height:1.95;letter-spacing:.08em;margin:28px 0 0;max-width:880px;text-wrap:balance">正因為有團隊的努力與凝聚，這份共同打拼的情誼，<br>遠比重陞機電本身更為珍貴。</p>
+        <p style="font-size:clamp(14px,1.2vw,17px);line-height:2.1;letter-spacing:.08em;margin:24px 0 0;max-width:620px;color:rgba(255,255,255,.9);text-wrap:balance">我們重視每一位成員，堅持以人為本，讓每個人在這裡都能被看見、尊重，也能安心地與團隊一起成長。</p>
+      </div>
+      <div data-people-end="" style="position:absolute;left:0;right:0;bottom:0;padding:0 clamp(20px,4vw,56px) clamp(32px,6vh,64px);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;opacity:{{ peopleEnd }}">
+        <div style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(34px,5vw,72px);letter-spacing:.08em;line-height:1.2">這就是重陞機電。</div>
+        <div style="font-size:12px;letter-spacing:.1em;color:rgba(255,255,255,.8)">尾牙與團隊活動合影</div>
+      </div>
+    </div>
+  </section>
+</sc-if>
+
+<!-- ========== SERVICES ========== -->
+<sc-if value="{{ isServices }}" hint-placeholder-val="{{ false }}">
+  <section style="padding:clamp(140px,16vw,210px) 0 clamp(40px,5vw,72px)">
+    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+      <div data-rv="up" style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.28em;color:#8f4f28">SERVICES — 工程服務</div>
+      <h1 data-rv="up" data-rv-delay="80" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(40px,6vw,84px);line-height:1.35;letter-spacing:.05em;color:#141c3f;margin:24px 0 0">五大工程，<br>一套整合思維。</h1>
+      <div data-rv="line" style="height:1px;background:rgba(26,29,36,.22);margin-top:48px;transform-origin:left"></div>
+      <p data-rv="up" style="margin:32px 0 0;max-width:720px;font-size:15px;line-height:2;letter-spacing:.05em;color:#4a4740;text-align:justify;line-break:strict">機電系統彼此交錯：配電要讓位給風管，消防管要避開結構梁，弱電要與監控設備同步。<br>重陞以整合的角度規劃五大工程，並處理圖說審查、材料送審與施工界面協調。</p>
+    </div>
+  </section>
+  <div style="position:sticky;top:72px;z-index:20;background:#f6f3ee;border-top:1px solid rgba(26,29,36,.12);border-bottom:1px solid rgba(26,29,36,.12)">
+    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px);display:flex;gap:6px;overflow-x:auto;scrollbar-width:none">
+      <sc-for list="{{ svcNav }}" as="n">
+        <button type="button" onClick="{{ n.go }}" style="flex:none;height:52px;padding:0 16px;background:transparent;border:0;border-bottom:2px solid {{ n.bd }};color:#141c3f;font:inherit;font-size:14px;letter-spacing:.1em;cursor:pointer;display:flex;align-items:center;gap:8px" style-hover="color:#9e5b33"><span style="font-family:'Barlow Condensed',sans-serif;font-size:12px;color:#8f4f28">{{ n.no }}</span>{{ n.name }}</button>
+      </sc-for>
+    </div>
+  </div>
+  <sc-for list="{{ services }}" as="s">
+    <section data-svc-sec="{{ s.k }}" style="padding:clamp(64px,8vw,120px) 0;border-bottom:1px solid rgba(26,29,36,.12)">
+      <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:clamp(36px,5vw,80px);align-items:start">
+        <div>
+          <div style="display:flex;align-items:baseline;gap:16px">
+            <span data-rv="up" style="font-family:'Barlow Condensed',sans-serif;font-weight:300;font-size:clamp(56px,6vw,88px);line-height:1;color:#1f2f86">{{ s.no }}</span>
+            <span data-rv="up" style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.28em;color:#6b675f">{{ s.en }}</span>
+          </div>
+          <h2 data-rv="up" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(30px,3.4vw,46px);letter-spacing:.08em;color:#141c3f;margin:18px 0 0">{{ s.name }}</h2>
+          <p data-rv="up" style="margin:12px 0 0;font-family:'Noto Serif TC',serif;font-size:18px;color:#8f4f28;letter-spacing:.05em">{{ s.lead }}</p>
+          <p data-rv="up" style="margin:22px 0 0;max-width:520px;font-size:15px;line-height:2;letter-spacing:.05em;color:#4a4740">{{ s.desc }}</p>
+          <ul data-rv="up" style="list-style:none;margin:28px 0 0;padding:0;border-top:1px solid rgba(26,29,36,.16);max-width:520px">
+            <sc-for list="{{ s.scope }}" as="it"><li style="display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid rgba(26,29,36,.16);font-size:14px;letter-spacing:.06em"><span style="width:6px;height:1px;background:#b0673a"></span>{{ it }}</li></sc-for>
+          </ul>
+          <div data-rv="up" style="margin-top:32px">
+            <div style="font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:.24em;color:#6b675f">RELATED WORKS · 相關實績</div>
+            <div style="display:flex;flex-direction:column;margin-top:10px">
+              <sc-for list="{{ s.related }}" as="r">
+                <a href="{{ r.href }}" style="display:grid;grid-template-columns:56px minmax(0,1fr) 18px;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid rgba(26,29,36,.12);color:#141c3f;text-decoration:none;font-size:14px;letter-spacing:.04em" style-hover="color:#9e5b33"><span style="font-family:'Barlow Condensed',sans-serif;font-size:18px;color:#1f2f86">{{ r.yearLabel }}</span><span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ r.name }}</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+              </sc-for>
+            </div>
+            <a href="{{ s.worksHref }}" style="display:inline-flex;margin-top:14px;font-size:13px;letter-spacing:.12em;color:#1f2f86">{{ s.worksLabel }}</a>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px">
+          <figure style="margin:0">
+            <div data-rv="mask" style="position:relative;aspect-ratio:3/4;overflow:hidden;background:#e3dfd7"><image-slot data-rv-img="" id="svc2-{{ s.k }}" src="{{ s.img }}" shape="rect" placeholder="{{ s.name }}照片" style="position:absolute;inset:0"></image-slot></div>
+            <figcaption style="margin-top:8px;font-size:12px;letter-spacing:.04em;color:#6b675f">{{ s.alt }}</figcaption>
+          </figure>
+          <figure style="margin:0">
+            <div data-rv="draw" class="blueprint" style="position:relative;aspect-ratio:3/4;padding:20px 12px">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              {{ s.mini }}
+            </div>
+            <figcaption style="margin-top:8px;font-size:12px;letter-spacing:.04em;color:#6b675f">系統在建築中的位置（示意）</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </sc-for>
+  <section data-svc-sec="X" style="padding:clamp(64px,8vw,120px) 0">
+    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+      <h2 data-rv="up" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(26px,3vw,38px);letter-spacing:.08em;color:#141c3f;margin:0">其他工程項目</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:28px;margin-top:40px">
+        <sc-for list="{{ others }}" as="o">
+          <div data-rv="up" data-rv-delay="{{ o.delay }}" class="blueprint" style="padding:28px 24px">
+            <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+            <div style="font-family:'Noto Serif TC',serif;font-size:20px;letter-spacing:.08em;color:#141c3f">{{ o.n }}</div>
+            <p style="margin:12px 0 0;font-size:14px;line-height:1.9;color:#4a4740">{{ o.d }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+</sc-if>
+
+<!-- ========== WORKS LIST ========== -->
+<sc-if value="{{ isWorks }}" hint-placeholder-val="{{ false }}">
+  <section style="padding:clamp(140px,16vw,210px) 0 clamp(32px,4vw,56px)">
+    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+      <div data-rv="up" style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.28em;color:#8f4f28">WORKS — 工程實績</div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px">
+        <h1 data-rv="up" data-rv-delay="80" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(40px,6vw,84px);line-height:1.35;letter-spacing:.05em;color:#141c3f;margin:24px 0 0">三十年的工程紀錄。</h1>
+        <div data-rv="up" data-rv-delay="140" style="display:flex;align-items:baseline;gap:8px;color:#141c3f"><span style="font-family:'Barlow Condensed',sans-serif;font-weight:300;font-size:88px;line-height:1">{{ listCount }}</span><span style="font-size:14px;letter-spacing:.1em">件</span></div>
+      </div>
+      <div data-rv="line" style="height:1px;background:rgba(26,29,36,.22);margin-top:40px;transform-origin:left"></div>
+      <div style="display:flex;flex-direction:column;gap:14px;margin-top:28px">
+        <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center">
+          <span style="font-size:12px;letter-spacing:.14em;color:#6b675f;width:64px">案型</span>
+          <sc-for list="{{ filters }}" as="f">
+            <button type="button" onClick="{{ f.go }}" aria-pressed="{{ f.on }}" style="height:40px;padding:0 14px;border:1px solid {{ f.bd }};background:{{ f.bg }};color:{{ f.c }};font:inherit;font-size:13px;letter-spacing:.08em;cursor:pointer;display:flex;align-items:center;gap:8px;transition:background .3s,color .3s">{{ f.label }}<span style="font-family:'Barlow Condensed',sans-serif;font-size:12px;opacity:.75">{{ f.count }}</span></button>
+          </sc-for>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center">
+          <span style="font-size:12px;letter-spacing:.14em;color:#6b675f;width:64px">系統</span>
+          <sc-for list="{{ sysFilters }}" as="f">
+            <button type="button" onClick="{{ f.go }}" aria-pressed="{{ f.on }}" style="height:40px;padding:0 14px;border:1px solid {{ f.bd }};background:{{ f.bg }};color:{{ f.c }};font:inherit;font-size:13px;letter-spacing:.08em;cursor:pointer;transition:background .3s,color .3s">{{ f.label }}</button>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="padding:0 0 clamp(80px,10vw,140px)">
+    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+      <sc-if value="{{ desktop }}" hint-placeholder-val="{{ true }}">
+        <div style="display:grid;grid-template-columns:88px minmax(0,1fr) 120px 200px 24px;gap:24px;padding:12px 0;border-bottom:1px solid #141c3f;font-size:12px;letter-spacing:.14em;color:#6b675f"><span>年份</span><span>工程名稱 / 施作項目</span><span>類型</span><span>涉及系統</span><span></span></div>
+      </sc-if>
+      <sc-for list="{{ list }}" as="w" hint-placeholder-count="8">
+        <a href="{{ w.href }}" style="display:grid;grid-template-columns:{{ rowCols }};gap:{{ rowGap }};align-items:center;padding:22px 12px 22px 0;border-bottom:1px solid rgba(26,29,36,.14);color:#1a1d24;text-decoration:none;transition:background .35s,padding .35s" style-hover="background:#ebe7e0;padding-left:12px;color:#1a1d24">
+          <span style="font-family:'Barlow Condensed',sans-serif;font-weight:300;font-size:32px;line-height:1;color:#1f2f86">{{ w.yearLabel }}</span>
+          <span style="min-width:0">
+            <span style="display:block;font-family:'Noto Serif TC',serif;font-size:17px;line-height:1.6;letter-spacing:.04em;color:#141c3f">{{ w.name }}</span>
+            <span style="display:block;margin-top:4px;font-size:13px;line-height:1.7;color:#6b675f">{{ w.items }}</span>
+          </span>
+          <span style="font-size:13px;letter-spacing:.08em;color:#4a4740">{{ w.type }}</span>
+          <span style="display:flex;flex-wrap:wrap;gap:4px"><sc-for list="{{ w.marks }}" as="m"><span style="font-size:11px;padding:2px 6px;border:1px solid {{ m.bd }};background:{{ m.bg }};color:{{ m.c }}">{{ m.n }}</span></sc-for></span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+      </sc-for>
+      <sc-if value="{{ listEmpty }}"><p style="padding:48px 0;font-size:15px;color:#6b675f">沒有符合條件的實績，請調整篩選。</p></sc-if>
+    </div>
+  </section>
+</sc-if>
+
+<!-- ========== CASE DETAIL ========== -->
+<sc-if value="{{ isCase }}" hint-placeholder-val="{{ false }}">
+  <section style="padding:clamp(120px,13vw,170px) 0 clamp(40px,5vw,72px)">
+    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+      <nav aria-label="麵包屑" style="display:flex;gap:10px;font-size:13px;letter-spacing:.1em;color:#6b675f"><a href="#/works" style="color:#1f2f86;text-decoration:none">工程實績</a><span>/</span><span>{{ cs.type }}</span></nav>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(24px,4vw,64px);align-items:end;margin-top:32px">
+        <div data-rv="up" style="font-family:'Barlow Condensed',sans-serif;font-weight:300;font-size:clamp(80px,12vw,180px);line-height:.85;color:#1f2f86;letter-spacing:-.02em">{{ cs.yearLabel }}</div>
+        <div>
+          <h1 data-rv="up" data-rv-delay="80" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(26px,3.2vw,44px);line-height:1.5;letter-spacing:.05em;color:#141c3f;margin:0;text-wrap:pretty">{{ cs.name }}</h1>
+          <p data-rv="up" data-rv-delay="140" style="margin:14px 0 0;font-size:15px;line-height:1.9;color:#4a4740;letter-spacing:.04em">{{ cs.items }}</p>
+        </div>
+      </div>
+      <div class="blueprint" style="margin-top:clamp(40px,5vw,64px)">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <div data-rv="mask" style="position:relative;aspect-ratio:16/8;min-height:240px;overflow:hidden;background:#e3dfd7">{{ caseSlot }}</div>
+      </div>
+      <div style="display:flex;justify-content:space-between;gap:12px;margin-top:10px;font-size:12px;letter-spacing:.06em;color:#6b675f"><sc-if value="{{ showFlags }}"><span style="color:#8f4f28">AI生成示意圖</span></sc-if></div>
+
+      <section style="display:flex;flex-wrap:wrap;gap:clamp(40px,6vw,96px);align-items:stretch;margin-top:clamp(56px,7vw,96px)">
+        <div style="flex:1 1 320px;min-width:0;display:flex;flex-direction:column">
+          <div data-rv="up" style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.28em;color:#8f4f28">PROJECT DATA</div>
+          <h2 data-rv="up" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:26px;letter-spacing:.1em;color:#141c3f;margin:12px 0 0">案件資料</h2>
+          <dl style="margin:24px 0 0;border-top:1px solid rgba(26,29,36,.16)">
+            <sc-for list="{{ cs.meta }}" as="m">
+              <div style="display:grid;grid-template-columns:96px minmax(0,1fr);gap:16px;align-items:baseline;padding:16px 0;border-bottom:1px solid rgba(26,29,36,.16)">
+                <dt style="font-size:13px;letter-spacing:.16em;color:#6b675f">{{ m.k }}</dt>
+                <dd style="margin:0;font-size:16px;line-height:1.7;letter-spacing:.06em;color:#141c3f">{{ m.v }}</dd>
+              </div>
+            </sc-for>
+          </dl>
+          <div style="margin-top:auto;padding-top:40px">
+            <div style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.28em;color:#8f4f28">LOCATION</div>
+            <sc-if value="{{ cs.hasMap }}">
+              <p style="margin:12px 0 0;font-family:'Noto Serif TC',serif;font-size:20px;letter-spacing:.08em;color:#141c3f">{{ cs.mapLabel }}</p>
+              <p style="margin:8px 0 0;font-size:13px;line-height:1.9;letter-spacing:.05em;color:#6b675f;text-wrap:pretty">基於業主隱私，僅顯示行政區或鄰近區域，不標示精確地址。</p>
+              <a href="{{ cs.mapHref }}" target="_blank" rel="noopener" class="blueprint" style="display:inline-flex;align-items:center;gap:12px;height:48px;padding:0 22px;margin-top:20px;border:1px solid #1f2f86;color:#1f2f86;font-size:14px;letter-spacing:.12em;text-decoration:none">在 Google Maps 查看<span style="font-family:'Barlow Condensed',sans-serif">↗</span></a>
+            </sc-if>
+            <sc-if value="{{ cs.noMap }}">
+              <p style="margin:12px 0 0;font-size:14px;line-height:1.9;letter-spacing:.05em;color:#6b675f">工程所在區域待補充，確認後將顯示地圖。</p>
+            </sc-if>
+          </div>
+        </div>
+        <sc-if value="{{ cs.hasMap }}">
+          <div style="flex:1.6 1 420px;min-width:0;align-self:flex-start;aspect-ratio:3/2;min-height:260px;max-height:520px;border:1px solid rgba(26,29,36,.16);background:#e3dfd7">
+            <iframe src="{{ cs.mapSrc }}" title="工程位置地圖" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" style="display:block;width:100%;height:100%;border:0"></iframe>
+          </div>
+        </sc-if>
+      </section>
+
+      <sc-if value="{{ caseB }}" hint-placeholder-val="{{ true }}">
+        <section style="margin-top:clamp(64px,8vw,112px)">
+          <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px 24px;padding-bottom:20px;border-bottom:1px solid rgba(26,29,36,.22)">
+            <div>
+              <div data-rv="up" style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.28em;color:#8f4f28">SCOPE OF WORK</div>
+              <h2 data-rv="up" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:26px;letter-spacing:.1em;color:#141c3f;margin:12px 0 0">施作項目</h2>
+            </div>
+            <div style="display:flex;align-items:baseline;gap:8px;color:#141c3f"><span style="font-family:'Barlow Condensed',sans-serif;font-weight:300;font-size:56px;line-height:.9">{{ cs.itemCount }}</span><span style="font-size:13px;letter-spacing:.14em;color:#6b675f">項</span></div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));border-left:1px solid rgba(26,29,36,.14)">
+            <sc-for list="{{ cs.itemCards }}" as="it" hint-placeholder-count="3">
+              <div data-rv="up" style="border-right:1px solid rgba(26,29,36,.14);border-bottom:1px solid rgba(26,29,36,.14);padding:24px 24px 28px;display:flex;flex-direction:column;gap:20px;min-height:132px">
+                <span style="font-family:'Barlow Condensed',sans-serif;font-size:14px;letter-spacing:.18em;color:#8f4f28">{{ it.no }}</span>
+                <span style="font-size:16px;line-height:1.8;letter-spacing:.06em;color:#141c3f;text-wrap:pretty">{{ it.t }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </section>
+        <section style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:clamp(40px,6vw,96px);align-items:start;margin-top:clamp(64px,8vw,112px)">
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px;padding-bottom:20px;border-bottom:1px solid rgba(26,29,36,.22)">
+              <div>
+                <div data-rv="up" style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.28em;color:#8f4f28">SYSTEMS</div>
+                <h2 data-rv="up" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:26px;letter-spacing:.1em;color:#141c3f;margin:12px 0 0">涉及系統</h2>
+              </div>
+              <span style="font-size:13px;letter-spacing:.12em;color:#6b675f">五大工程中 {{ cs.sysOnCount }} 項</span>
+            </div>
+            <ul style="list-style:none;margin:0;padding:0">
+              <sc-for list="{{ cs.sysRows }}" as="r" hint-placeholder-count="5">
+                <li data-rv="up" style="display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:16px;align-items:start;padding:20px 0;border-bottom:1px solid rgba(26,29,36,.14)">
+                  <span style="font-family:'Barlow Condensed',sans-serif;font-size:14px;letter-spacing:.14em;color:{{ r.stc }};padding-top:3px">{{ r.no }}</span>
+                  <div style="min-width:0">
+                    <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px">
+                      <span style="font-family:'Noto Serif TC',serif;font-size:18px;letter-spacing:.08em;color:{{ r.c }}">{{ r.name }}</span>
+                      <span style="font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:.2em;color:#a29d93">{{ r.en }}</span>
+                    </div>
+                    <sc-if value="{{ r.on }}"><p style="margin:6px 0 0;font-size:14px;line-height:1.8;letter-spacing:.04em;color:#4a4740;text-wrap:pretty">{{ r.lead }}</p></sc-if>
+                  </div>
+                  <span style="display:flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.12em;color:{{ r.stc }};padding-top:4px"><span style="width:8px;height:8px;border-radius:50%;border:1px solid {{ r.dotBd }};background:{{ r.dot }}"></span>{{ r.st }}</span>
+                </li>
+              </sc-for>
+            </ul>
+          </div>
+          <figure style="margin:0">
+            <div data-rv="draw" class="blueprint" style="position:relative;aspect-ratio:1/1;max-height:520px;padding:32px 24px">
+              <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+              {{ cs.drawing }}
+            </div>
+            <figcaption style="margin-top:10px;font-size:12px;letter-spacing:.06em;color:#6b675f">建築剖面示意 — 銅橘色為本案涉及系統</figcaption>
+          </figure>
+        </section>
+      </sc-if>
+      <sc-if value="{{ caseA }}" hint-placeholder-val="{{ false }}">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:clamp(40px,6vw,96px);margin-top:clamp(56px,7vw,96px)">
+        <div>
+          <h2 data-rv="up" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:26px;letter-spacing:.1em;color:#141c3f;margin:0">施作項目</h2>
+          <ul style="list-style:none;margin:24px 0 0;padding:0;border-top:1px solid rgba(26,29,36,.16)">
+            <sc-for list="{{ cs.itemList }}" as="it"><li data-rv="up" style="display:flex;gap:16px;align-items:baseline;padding:16px 0;border-bottom:1px solid rgba(26,29,36,.16);font-size:15px;letter-spacing:.06em"><span style="width:8px;height:1px;background:#b0673a;flex:none;transform:translateY(-4px)"></span>{{ it }}</li></sc-for>
+          </ul>
+          <sc-if value="{{ cs.hasSys }}">
+            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:24px">
+              <sc-for list="{{ cs.marks }}" as="m"><span style="font-size:13px;letter-spacing:.06em;padding:6px 12px;border:1px solid {{ m.bd }};background:{{ m.bg }};color:{{ m.c }}">{{ m.n }}</span></sc-for>
+            </div>
+          </sc-if>
+          <sc-if value="{{ cs.showNotes }}">
+            
+          </sc-if>
+        </div>
+        <figure style="margin:0">
+          <div data-rv="draw" class="blueprint" style="position:relative;aspect-ratio:5/6;max-height:620px;padding:36px 24px">
+            <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+            {{ cs.drawing }}
+          </div>
+          
+        </figure>
+      </div>
+      </sc-if>
+    </div>
+  </section>
+  <nav aria-label="其他案例" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));border-top:1px solid rgba(26,29,36,.14)">
+    <a href="{{ prevCase.href }}" style="display:flex;flex-direction:column;gap:10px;padding:clamp(32px,4vw,56px) clamp(20px,4vw,56px);border-right:1px solid rgba(26,29,36,.14);color:#141c3f;text-decoration:none;transition:background .4s,color .4s" style-hover="background:#141c3f;color:#fff">
+      <span style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.24em;opacity:.7">← PREV · {{ prevCase.yearLabel }}</span>
+      <span style="font-family:'Noto Serif TC',serif;font-size:19px;letter-spacing:.05em;line-height:1.6">{{ prevCase.name }}</span>
+    </a>
+    <a href="{{ nextCase.href }}" style="display:flex;flex-direction:column;align-items:flex-end;text-align:right;gap:10px;padding:clamp(32px,4vw,56px) clamp(20px,4vw,56px);color:#141c3f;text-decoration:none;transition:background .4s,color .4s" style-hover="background:#141c3f;color:#fff">
+      <span style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.24em;opacity:.7">NEXT · {{ nextCase.yearLabel }} →</span>
+      <span style="font-family:'Noto Serif TC',serif;font-size:19px;letter-spacing:.05em;line-height:1.6">{{ nextCase.name }}</span>
+    </a>
+  </nav>
+</sc-if>
+
+<!-- ========== QUALIFICATIONS & PROCESS ========== -->
+<sc-if value="{{ isQuals }}" hint-placeholder-val="{{ false }}">
+  <section style="padding:clamp(140px,16vw,210px) 0 clamp(56px,7vw,96px)">
+    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+      <div data-rv="up" style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.28em;color:#8f4f28">QUALITY ASSURANCE — 品質保證</div>
+      <h1 data-rv="up" data-rv-delay="80" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(40px,6vw,84px);line-height:1.35;letter-spacing:.05em;color:#141c3f;margin:24px 0 0">資格是門檻，流程是承諾。</h1>
+      <div data-rv="line" style="height:1px;background:rgba(26,29,36,.22);margin-top:48px;transform-origin:left"></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:28px;margin-top:48px">
+        <sc-for list="{{ pillars }}" as="p">
+          <div data-rv="up" data-rv-delay="{{ p.delay }}" class="blueprint" style="padding:32px 26px">
+            <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+            <div style="font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:.24em;color:#8f4f28">{{ p.en }}</div>
+            <div style="font-family:'Noto Serif TC',serif;font-size:26px;letter-spacing:.14em;color:#141c3f;margin-top:12px">{{ p.n }}</div>
+            <p style="margin:14px 0 0;font-size:14px;line-height:1.9;color:#4a4740">{{ p.d }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:clamp(56px,7vw,110px) 0;border-top:1px solid rgba(26,29,36,.12)">
+    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px);display:flex;flex-wrap:wrap;align-items:center;gap:clamp(40px,6vw,96px)">
+      <div style="flex:1 1 340px;min-width:0;max-width:480px;display:flex;flex-direction:column;gap:clamp(48px,5vw,72px)">
+      <div>
+        <h2 data-rv="up" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(26px,3vw,38px);letter-spacing:.08em;color:#141c3f;margin:0">特許資格</h2>
+        <p data-rv="up" style="margin:16px 0 0;font-size:15px;line-height:2;color:#4a4740">下列項目具特許資格，可作為特定工程承攬與資格審查之依據。</p>
+        <div style="display:flex;flex-direction:column;margin-top:24px;border-top:1px solid #141c3f">
+          <sc-for list="{{ licenses }}" as="l">
+            <div data-rv="up" style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;border-bottom:1px solid rgba(26,29,36,.16)">
+              <span style="font-family:'Noto Serif TC',serif;font-size:22px;letter-spacing:.1em;color:#141c3f">{{ l.n }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      <div>
+        <h2 data-rv="up" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(26px,3vw,38px);letter-spacing:.08em;color:#141c3f;margin:0">專業資格</h2>
+        <div data-rv="up" style="display:flex;align-items:baseline;gap:6px;margin-top:20px;color:#141c3f"><span style="font-family:'Barlow Condensed',sans-serif;font-weight:300;font-size:96px;line-height:1">15</span><span style="font-family:'Barlow Condensed',sans-serif;font-size:36px;color:#b0673a">+</span><span style="font-size:15px;letter-spacing:.1em;margin-left:8px">項國家級與專業資質證明</span></div>
+        <p data-rv="up" style="margin:16px 0 0;font-size:15px;line-height:2;color:#4a4740">具備完整法定執業證照，並經公共工程委員會回訓認可。</p>
+      </div>
+      </div>
+      <figure data-rv="up" data-rv-delay="120" style="flex:1.4 1 420px;min-width:0;margin:0">
+        <img src="assets/certs.png" alt="技術士證、結業證書、合格證書等證照" style="display:block;width:100%;height:auto;filter:drop-shadow(0 20px 30px rgba(20,28,63,.16))">
+        <figcaption style="margin-top:16px;font-size:12px;letter-spacing:.08em;color:#6b675f;text-align:center">技術士證、品質管理人員回訓結業證書、職業安全衛生教育訓練等證照（個人資料已遮蔽）</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section style="padding:clamp(56px,7vw,110px) 0;border-top:1px solid rgba(26,29,36,.12)">
+    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+      <h2 data-rv="up" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(26px,3vw,38px);letter-spacing:.08em;color:#141c3f;margin:0">標準化作業流程</h2>
+      <p data-rv="up" style="margin:16px 0 0;font-size:15px;line-height:2;color:#4a4740">熟悉圖說審查、材料設備送審、施工界面協調、進度追蹤與驗收文件整合，協助各階段作業銜接至交付。</p>
+      <ol style="list-style:none;margin:48px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:1px;background:rgba(26,29,36,.14);border:1px solid rgba(26,29,36,.14)">
+        <sc-for list="{{ steps }}" as="p">
+          <li data-rv="up" data-rv-delay="{{ p.delay }}" style="background:#f6f3ee;padding:28px 24px 32px;display:flex;flex-direction:column">
+            <span style="font-family:'Barlow Condensed',sans-serif;font-weight:300;font-size:56px;line-height:1;color:#1f2f86">{{ p.no }}</span>
+            <span style="margin-top:6px;font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:.22em;color:#6b675f">{{ p.en }}</span>
+            <span style="margin-top:18px;font-family:'Noto Serif TC',serif;font-size:22px;letter-spacing:.12em;color:#141c3f">{{ p.t }}</span>
+            <p style="margin:12px 0 0;font-size:13px;line-height:1.9;color:#4a4740">{{ p.desc }}</p>
+            <ul style="list-style:none;margin:16px 0 0;padding:0">
+              <sc-for list="{{ p.items }}" as="it"><li style="display:flex;align-items:center;gap:10px;padding:8px 0;border-top:1px solid rgba(26,29,36,.12);font-size:13px;letter-spacing:.06em"><span style="width:6px;height:6px;border:1px solid #b0673a"></span>{{ it }}</li></sc-for>
+            </ul>
+          </li>
+        </sc-for>
+      </ol>
+    </div>
+  </section>
+</sc-if>
+
+<!-- ========== CONTACT ========== -->
+<sc-if value="{{ isContact }}" hint-placeholder-val="{{ false }}">
+  <section style="padding:clamp(140px,16vw,210px) 0 clamp(80px,10vw,140px)">
+    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+      <div data-rv="up" style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.28em;color:#8f4f28">CONTACT — 聯絡我們</div>
+      <h1 data-rv="up" data-rv-delay="80" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(40px,6vw,84px);line-height:1.35;letter-spacing:.05em;color:#141c3f;margin:24px 0 0">從一次對話開始。</h1>
+      <div data-rv="line" style="height:1px;background:rgba(26,29,36,.22);margin-top:48px;transform-origin:left"></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(48px,7vw,112px);margin-top:48px;align-items:start">
+        <div data-contact-form="">
+          <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+            <form onSubmit="{{ onSubmit }}" noValidate="{{ true }}" style="display:flex;flex-direction:column;gap:28px">
+              <sc-if value="{{ hasMsg }}" hint-placeholder-val="{{ false }}">
+                <div role="status" aria-live="polite" style="padding:16px 18px;border-left:3px solid {{ msgColor }};background:rgba(26,29,36,.04);color:{{ msgColor }};font-size:15px;line-height:1.8">{{ formMsg }}</div>
+              </sc-if>
+              <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+              <p style="margin:0;font-size:15px;line-height:2;color:#4a4740">請留下聯絡方式與工程概要，我們將由專人回覆。<span style="color:#8f4f28">*</span> 為必填。</p>
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:28px">
+                <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;letter-spacing:.1em;color:#4a4740">聯絡人 <span style="color:#8f4f28;display:contents">*</span>
+                  <input name="聯絡人" autocomplete="name" style="height:48px;border:0;border-bottom:1px solid rgba(26,29,36,.35);background:transparent;font:inherit;font-size:16px;letter-spacing:.04em;color:#1a1d24;padding:0 2px;border-radius:0" style-focus="border-bottom-color:#1f2f86;outline:none">
+                  <span style="font-size:12px;color:#9e3b1b;min-height:16px">{{ errs.name }}</span>
+                </label>
+                <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;letter-spacing:.1em;color:#4a4740">公司／單位
+                  <input name="公司／單位" autocomplete="organization" style="height:48px;border:0;border-bottom:1px solid rgba(26,29,36,.35);background:transparent;font:inherit;font-size:16px;color:#1a1d24;padding:0 2px;border-radius:0" style-focus="border-bottom-color:#1f2f86;outline:none">
+                  <span style="min-height:16px"></span>
+                </label>
+                <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;letter-spacing:.1em;color:#4a4740">聯絡電話 *
+                  <input name="聯絡電話" type="tel" inputmode="tel" autocomplete="tel" style="height:48px;border:0;border-bottom:1px solid rgba(26,29,36,.35);background:transparent;font:inherit;font-size:16px;color:#1a1d24;padding:0 2px;border-radius:0" style-focus="border-bottom-color:#1f2f86;outline:none">
+                  <span style="font-size:12px;color:#9e3b1b;min-height:16px">{{ errs.phone }}</span>
+                </label>
+                <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;letter-spacing:.1em;color:#4a4740">Email *
+                  <input name="Email" type="email" inputmode="email" autocomplete="email" style="height:48px;border:0;border-bottom:1px solid rgba(26,29,36,.35);background:transparent;font:inherit;font-size:16px;color:#1a1d24;padding:0 2px;border-radius:0" style-focus="border-bottom-color:#1f2f86;outline:none">
+                  <span style="font-size:12px;color:#9e3b1b;min-height:16px">{{ errs.email }}</span>
+                </label>
+              </div>
+              <fieldset style="border:0;margin:0;padding:0">
+                <legend style="font-size:13px;letter-spacing:.1em;color:#4a4740;padding:0">工程類型（可複選）</legend>
+                <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:12px">
+                  <sc-for list="{{ chipList }}" as="c">
+                    <label class="opt" style="position:relative;display:inline-flex;align-items:center;box-sizing:border-box;height:44px;padding:0 16px;border:1px solid {{ c.bd }};background:{{ c.bg }};color:{{ c.c }};font-size:14px;letter-spacing:.08em;cursor:pointer;transition:background .25s,color .25s"><input type="checkbox" name="工程類型" value="{{ c.n }}" checked="{{ c.on }}" onChange="{{ c.go }}"><span>{{ c.n }}</span></label>
+                  </sc-for>
+                </div>
+              </fieldset>
+              <fieldset style="border:0;margin:0;padding:0">
+                <legend style="font-size:13px;letter-spacing:.1em;color:#4a4740;padding:0">預計工期</legend>
+                <div style="display:flex;flex-wrap:wrap;margin-top:12px;border:1px solid rgba(26,29,36,.25);width:fit-content;max-width:100%">
+                  <sc-for list="{{ whenList }}" as="c">
+                    <label class="opt" style="position:relative;display:inline-flex;align-items:center;box-sizing:border-box;height:44px;padding:0 16px;background:{{ c.bg }};color:{{ c.c }};font-size:14px;letter-spacing:.06em;cursor:pointer;transition:background .25s,color .25s"><input type="radio" name="預計工期" value="{{ c.n }}" checked="{{ c.on }}" onChange="{{ c.go }}"><span>{{ c.n }}</span></label>
+                  </sc-for>
+                </div>
+              </fieldset>
+              <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;letter-spacing:.1em;color:#4a4740">需求說明
+                <textarea name="需求說明" rows="5" placeholder="例如：案件地點、樓層規模、目前進度（規劃／送審／施工中）" style="border:1px solid rgba(26,29,36,.3);background:transparent;font:inherit;font-size:15px;line-height:1.8;color:#1a1d24;padding:12px 14px;resize:vertical;border-radius:0" style-focus="border-color:#1f2f86;outline:none"></textarea>
+              </label>
+              <button type="submit" class="blueprint" disabled="{{ submitting }}" style="align-self:flex-start;display:inline-flex;align-items:center;gap:12px;height:56px;padding:0 32px;background:#141c3f;border-color:#141c3f;color:#fff;font:inherit;font-size:15px;letter-spacing:.16em;cursor:{{ submitCur }};opacity:{{ submitOp }};transition:background .3s" style-hover="background:#1f2f86">
+                <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>{{ submitLabel }}
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </button>
+            </form>
+          </sc-if>
+        </div>
+        <div>
+          <dl style="margin:0;border-top:1px solid #141c3f">
+            <sc-for list="{{ contactInfo }}" as="ci">
+              <div style="display:grid;grid-template-columns:72px minmax(0,1fr);gap:16px;padding:18px 0;border-bottom:1px solid rgba(26,29,36,.16)">
+                <dt style="font-size:13px;letter-spacing:.14em;color:#6b675f">{{ ci.k }}</dt>
+                <dd style="margin:0;font-size:15px;letter-spacing:.04em;color:#141c3f;display:flex;flex-wrap:wrap;gap:8px;align-items:center"><a href="{{ ci.href }}" style="color:#141c3f;text-decoration:none">{{ ci.v }}</a><sc-if value="{{ ci.flagOn }}"><span style="font-size:11px;color:#8f4f28;border:1px dashed #b0673a;padding:0 6px">{{ ci.flag }}</span></sc-if></dd>
+              </div>
+            </sc-for>
+          </dl>
+          <div class="blueprint" style="margin-top:32px">
+            <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+            <iframe title="重陞機電工程 地圖" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1810.2815899916623!2d121.00745390820508!3d24.844607779988827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34684afe1ba92bd3%3A0xf300fd4befa5bce5!2z6YeN6Zme5qmf6Zu75bel56iL6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1655280953259!5m2!1szh-TW!2stw" loading="lazy" style="display:block;width:100%;height:320px;border:0;filter:grayscale(.6) contrast(.95)"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</sc-if>
+
+<!-- ========== PARTNERS ========== -->
+<sc-if value="{{ isPartner }}" hint-placeholder-val="{{ false }}">
+  <section style="position:relative;min-height:100vh;display:flex;align-items:flex-end;overflow:hidden;background:#0b1230;color:#fff">
+    <img src="assets/partner-hero.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:65% 30%">
+    <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,18,48,.92) 0%,rgba(11,18,48,.6) 42%,rgba(11,18,48,.05) 75%),linear-gradient(0deg,rgba(11,18,48,.85) 0%,rgba(11,18,48,0) 40%)"></div>
+    <div style="position:relative;width:100%;max-width:1360px;margin:0 auto;padding:clamp(140px,18vh,220px) clamp(20px,4vw,56px) clamp(56px,9vh,110px)">
+      <div data-rv="up" style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.28em;color:#e0a57f">PARTNERS — 合作夥伴</div>
+      <h1 data-rv="up" data-rv-delay="80" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(40px,6vw,84px);line-height:1.35;letter-spacing:.05em;margin:24px 0 0">攜手同行，共築每一項工程。</h1>
+      <p data-rv="up" data-rv-delay="160" style="margin:28px 0 0;max-width:520px;font-size:15px;line-height:2.1;letter-spacing:.05em;color:rgba(255,255,255,.86);text-wrap:pretty">協力廠商、材料設備供應商與專業分包單位，歡迎登錄合作資料。<br>我們將依工程需求主動與您聯繫。</p>
+      <div data-rv="up" data-rv-delay="220" style="display:flex;flex-wrap:wrap;gap:14px;margin-top:40px">
+        <button type="button" onClick="{{ toPartnerForm }}" class="blueprint" style="display:inline-flex;align-items:center;gap:12px;height:56px;padding:0 30px;background:#b0673a;border-color:#b0673a;color:#fff;font:inherit;font-size:15px;letter-spacing:.14em;cursor:pointer" style-hover="background:#9a5530">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>填寫合作資料<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:clamp(72px,9vw,140px) 0;background:#f6f3ee">
+    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:clamp(28px,4vw,56px)">
+      <figure data-rv="up" style="margin:0">
+        <div class="blueprint" style="position:relative;aspect-ratio:4/3;overflow:hidden">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <img src="assets/partner-meeting.jpg" alt="工程團隊審閱圖說" style="display:block;width:100%;height:100%;object-fit:cover">
+        </div>
+        <figcaption style="display:flex;gap:16px;align-items:baseline;margin-top:20px"><span style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.2em;color:#8f4f28">01</span><span><span style="display:block;font-family:'Noto Serif TC',serif;font-size:22px;letter-spacing:.1em;color:#141c3f">圖說協調</span><span style="display:block;margin-top:8px;font-size:14px;line-height:1.9;color:#4a4740">開工前共同審查圖說與界面，確認分工與規格。</span></span></figcaption>
+      </figure>
+      <figure data-rv="up" data-rv-delay="120" style="margin:0">
+        <div class="blueprint" style="position:relative;aspect-ratio:4/3;overflow:hidden">
+          <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <img src="assets/partner-site.jpg" alt="現場機電設備會勘" style="display:block;width:100%;height:100%;object-fit:cover">
+        </div>
+        <figcaption style="display:flex;gap:16px;align-items:baseline;margin-top:20px"><span style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.2em;color:#8f4f28">02</span><span><span style="display:block;font-family:'Noto Serif TC',serif;font-size:22px;letter-spacing:.1em;color:#141c3f">現場會勘</span><span style="display:block;margin-top:8px;font-size:14px;line-height:1.9;color:#4a4740">設備進場、測試與驗收，與夥伴一同在現場把關。</span></span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section data-partner-form="" style="padding:clamp(72px,9vw,140px) 0 clamp(80px,10vw,150px);background:#111a3d;color:#fff">
+    <div style="max-width:1100px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px">
+        <div>
+          <div data-rv="up" style="font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.28em;color:#e0a57f">REGISTRATION</div>
+          <h2 data-rv="up" style="font-family:'Noto Serif TC',serif;font-weight:500;font-size:clamp(28px,3.4vw,44px);letter-spacing:.08em;margin:18px 0 0">合作夥伴資料登錄</h2>
+        </div>
+        <a data-rv="up" href="https://forms.office.com/Pages/ResponsePage.aspx?id=z4_Qyuaie0CKEcuNwVhh3kNoTHwYd9hIoFv65B7p6R1URUNST0E4M1laMU5EVzQwQzUxNDRGT1dDTy4u" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 20px;border:1px solid rgba(255,255,255,.4);color:#fff;text-decoration:none;font-size:14px;letter-spacing:.1em" style-hover="border-color:#fff">於新視窗開啟表單<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></a>
+      </div>
+      <div class="blueprint" style="margin-top:40px;color:rgba(255,255,255,.7);border-color:rgba(255,255,255,.25)">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <iframe title="重陞機電 合作夥伴資料登錄表單" src="https://forms.office.com/Pages/ResponsePage.aspx?id=z4_Qyuaie0CKEcuNwVhh3kNoTHwYd9hIoFv65B7p6R1URUNST0E4M1laMU5EVzQwQzUxNDRGT1dDTy4u&amp;embed=true" loading="lazy" allowfullscreen="" style="display:block;width:100%;height:clamp(640px,82vh,920px);border:0;background:#fff"></iframe>
+      </div>
+    </div>
+  </section>
+</sc-if>
+</main>
+
+<footer style="background:#0e1633;color:rgba(255,255,255,.82);padding:clamp(56px,7vw,96px) 0 32px">
+  <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:40px">
+      <div>
+        <img src="assets/logo.png" alt="重陞機電工程股份有限公司" style="height:20px;width:auto;filter:brightness(0) invert(1)">
+        <p style="margin:20px 0 0;font-family:'Noto Serif TC',serif;font-size:16px;letter-spacing:.1em;color:#fff">穩健踏實｜誠信經營｜專業整合</p>
+      </div>
+      <div style="font-size:14px;line-height:2.1;letter-spacing:.04em">
+        <div>新竹縣竹北市環科一路 23 號 8 樓之 5</div>
+        <div>傳真 03-518-2727</div>
+        <a href="mailto:cs@ycgroup.com.tw" style="color:#fff">cs@ycgroup.com.tw</a>
+      </div>
+      <nav aria-label="頁尾導覽" style="display:grid;grid-template-columns:1fr 1fr;gap:10px 24px;font-size:14px;letter-spacing:.1em">
+        <sc-for list="{{ menuItems }}" as="n"><a href="{{ n.href }}" style="color:rgba(255,255,255,.82);text-decoration:none" style-hover="color:#e0a57f">{{ n.label }}</a></sc-for>
+      </nav>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:56px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);font-size:12px;letter-spacing:.06em;color:rgba(255,255,255,.6)">
+      <span>© 重陞機電工程股份有限公司</span>
+    </div>
+  </div>
+</footer>
+</div></x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;heroMode&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;strips&quot;,&quot;single&quot;],&quot;default&quot;:&quot;strips&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;首屏&quot;},&quot;motion&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;auto&quot;,&quot;full&quot;,&quot;reduced&quot;],&quot;default&quot;:&quot;auto&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;動態&quot;},&quot;showFlags&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;內容&quot;},&quot;caseLayout&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;A 分欄&quot;,&quot;B 系統對照&quot;],&quot;default&quot;:&quot;B 系統對照&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;案例頁&quot;}}">
+const SYS=[{k:'E',n:'電氣'},{k:'P',n:'給排水'},{k:'H',n:'空調'},{k:'L',n:'弱電'},{k:'F',n:'消防'}];
+const ROUTES={
+  E:['M-10 523 H100 V166','M100 166 H330','M100 306 H330','M100 446 H330'],
+  P:['M300 80 V530 H410','M300 190 H70','M300 330 H70','M300 470 H70'],
+  H:['M178 80 V376','M60 96 H340','M60 236 H340','M60 376 H340'],
+  L:['M130 530 V110','M130 110 H320','M130 250 H320','M130 390 H320'],
+  F:['M345 522 V138','M345 138 H55','M345 208 H55','M345 278 H55','M345 348 H55','M345 418 H55','M345 488 H55']
+};
+const SVC=[
+  {k:'E',no:'01',name:'電氣工程',en:'ELECTRICAL',lead:'從受電，到每一個迴路。',desc:'高、低壓電氣系統施工，涵蓋受電、配電到各樓層電力配置，並協助電表申請，銜接送電作業。',scope:['高、低壓電氣工程','電表申請','接地系統工程'],img:'assets/svc-el.jpg',alt:'盤體絕緣測試與檢驗紀錄'},
+  {k:'P',no:'02',name:'給排水工程',en:'PLUMBING',lead:'讓水進得來，也排得出去。',desc:'給水、排水配管施工與自來水申請，並具雨排水、廢污水處理相關工程經驗。',scope:['給、排水配管工程','自來水申請','雨排水工程','廢、污水處理'],img:'assets/svc-pl.jpg',alt:'給排水管路閥件施工'},
+  {k:'H',no:'03',name:'空調工程',en:'HVAC',lead:'看不見的氣流，決定空間的舒適。',desc:'空調系統配管與設備安裝，依建築用途配置，並與結構、裝修及電氣界面協調施工。',scope:['空調工程','熱交換系統工程'],img:'assets/svc-ac.jpg',alt:'空調運轉測試'},
+  {k:'L',no:'04',name:'弱電工程',en:'LOW VOLTAGE',lead:'監看與通訊，是建築的神經。',desc:'弱電監控系統之配管配線與設備整合，含安全監視與網路設備等項目。',scope:['弱電監控系統工程','安全監視系統','網路設備'],img:'assets/svc-lv.jpg',alt:'監控畫面與圖面核對'},
+  {k:'F',no:'05',name:'消防工程',en:'FIRE PROTECTION',lead:'平時看不見，關鍵時刻必須可靠。',desc:'消防設備配管與安裝，配合法規查驗，確保系統在驗收時完整可用。',scope:['消防設備工程','消防栓箱配線與安裝'],img:'assets/svc-fp.jpg',alt:'消防栓箱配線作業'}
+];
+const STEPS=[
+  {no:'01',t:'需求確認',en:'SCOPE',stage:'工程接案',items:['專案範疇界定','風險預先評估'],desc:'在報價與簽約前釐清工程範圍、界面與時程，先把可能的風險列出來。',img:'assets/team-review.jpg',alt:'圖說會審 · 取自公司簡報'},
+  {no:'02',t:'審圖送審',en:'REVIEW',stage:'送審作業',items:['圖面審查整合','材料設備送審','施工計畫撰寫'],desc:'整合各系統圖說，完成材料設備送審與施工計畫，讓問題在開工前留在紙上。',img:'assets/site-lowvolt.jpg',alt:'監控畫面與圖面核對 · 取自公司簡報'},
+  {no:'03',t:'現場協調',en:'COORDINATION',stage:'現場協調',items:['工程介面整合','多方溝通協作'],desc:'與營造、裝修及各工種協調管線路徑與施工順序，減少現場衝突與重工。',img:'assets/site-plumbing.jpg',alt:'管路閥件施工 · 取自公司簡報'},
+  {no:'04',t:'進度管控',en:'SCHEDULE',stage:'進度管控',items:['工程進度追蹤','應變措施執行'],desc:'持續追蹤各階段進度，遇到設計變更或現場狀況，即時提出應變方案。',img:'assets/site-fire.jpg',alt:'消防栓箱配線作業 · 取自公司簡報'},
+  {no:'05',t:'驗收交付',en:'HANDOVER',stage:'驗收交付',items:['功能測試驗收','竣工文件結案'],desc:'完成功能測試與檢驗紀錄，整理竣工文件，完整交付給業主。',img:'assets/site-electric.jpg',alt:'盤體絕緣測試與檢驗紀錄 · 取自公司簡報'}
+];
+const W=[
+['hwakuo',1998,'觀光飯店','華國大飯店','(13F) 內部整修含電氣、監控等工程','EL'],
+['tmask',1998,'電子廠房','台灣光罩電子股份有限公司','(8F) 水電、消防工程','EPF'],
+['dongyi',1999,'集合住宅','東怡鎮住宅大樓新建工程','水電、消防工程','EPF'],
+['huchang',2000,'高級住宅','互昌龍江路集合住宅','(10F) 水電、消防、空調及監控','EPFHL'],
+['tianlu',2000,'觀光飯店','天廬大飯店','(4F) 水電、消防工程','EPF'],
+['thsr-tunnel',2001,'台灣高鐵','高鐵 C215 桃園一號隧道','接地工程','G'],
+['thsr-v1',2001,'台灣高鐵','高鐵 C215 標 V1 高架段接地系統工程','接地工程','G'],
+['nhri',2002,'公共建設','國家衛生研究院','水電、消防工程','EPF'],
+['mauritius',2003,'觀光飯店','模里西斯帝王飯店增建工程','水電、消防、空調、汙水處理','EPFH'],
+['thsr-v2',2003,'台灣高鐵','高鐵 C215 標 V2 高架段接地系統工程','接地工程','G'],
+['xinyi',2003,'集合住宅','新纖、味王、恆昌信義住宅大樓新建工程','(13F) 水電、消防、空調','EPFH'],
+['huyi-56',2003,'科技廠房','互億科技廠房 5F–6F 機電、空調增建工程','(5F–6F) 水電、消防、空調','EPFH'],
+['meiling',2003,'辦公大樓','美齡樓新建工程','(9F) 水電、消防、空調','EPFH'],
+['thsr-v2b',2003,'台灣高鐵','高鐵 C215 標 V2 高架段懸臂梁 TYPE Ⅱ 接地系統工程','接地工程','G'],
+['huyi-16',2004,'科技廠房','互億科技廠房 1F 及 6F 空調增建工程','(1F、6F) 空調','H'],
+['showchwan',2005,'醫院建設','彰濱秀傳醫院新建工程','(7F) 水電、消防工程','EPF'],
+['sidao',2005,'電子廠房','矽導研發中心','(4F) 水電、消防工程','EPF'],
+['tpo',2006,'科技廠房','統寶科技新建工程','接地工程','G'],
+['kansai',2006,'觀光飯店','關西老爺溫泉配管工程','溫泉配管工程','P'],
+['taiyuan',2007,'住宅大樓','太原文化京都大樓變更工程','大樓變更工程',''],
+['huagu',2009,'集合住宅','華固名人道集合住宅','電氣、給排水、消防、空調工程','EPFH'],
+['palau',2009,'觀光飯店','帛琉老爺大飯店','熱系統交換工程','H'],
+['nctu-hakka',2009,'學校建設','國立交通大學客家文化學院大樓興建工程','電氣、給排水、消防、弱電、空調工程','EPHLF'],
+['mcl-sales',2011,'公共工程','嘉義縣馬稠後產業園區第一期委託開發、出售及管理案','銷售中心平面配置規劃案',''],
+['houli',2012,'公共工程','后里園區汙水處理廠一期二階工程','機電工程','EP'],
+['yibang',2012,'科技廠房','益邦製藥竹南廠二期工程','噴灌工程、衛浴 UT 工程、雨排水工程、臨時電工程','EP'],
+['creon',2014,'集合住宅','克里翁集合住宅','機電統包工程','EPHLF'],
+['fengdian',2016,'集合住宅','夆典上河苑集合住宅新建工程','水電、消防工程','EPF'],
+['ntu-global',2016,'集合住宅','台大寰宇堂集合住宅新建工程','水電、消防工程','EPF'],
+['wenchang',2018,'公共工程','桃園市桃圈文昌公園地下停車場興建工程','筏基連通管工程、洗車台設備','P'],
+['ntu-eng',2019,'學校建設','國立台灣大學工學院綜合新館新建工程','水電、空調工程、機電工程','EPHL'],
+['nctu-dorm',2019,'學校建設','國立交通大學光復校區研究生第三宿舍興建工程','機電工程','EPL'],
+['qigu',2019,'公共建設','臺南市七股工業區開發、租售及管理計畫－假設工程','工務所（給排水、弱電設備工程）','PL'],
+['mcl-1',2019,'公共工程','嘉義縣馬稠後產業園區第一期委託開發、出售及管理案','機電工程、園區景觀工程','EP'],
+['mcl-bridge',2021,'公共工程','嘉義縣馬稠後產業園區第一期－自行車景觀橋暨棧橋','自行車景觀橋暨棧橋機電工程、汙水廠水電工程','EP'],
+['yuda',2022,'學校建設','育達高職美仁段新建大樓工程','水電、消防、弱電、給排水工程','EPFL'],
+['tsmc12',2022,'廠房工程','台積 12 廠 Phase Ⅱ 新建工程','雨排、噴灌','P'],
+['mcl-late',2020,'公共工程','嘉義縣馬稠後產業園區後期委託開發、使用收益處分及管理案','全區臨時水電工程、道路機電工程、167 縣道道路拓寬機電工程、園區管理中心機電工程、景觀綠美化機電工程、停車場照明工程','EP'],
+['detai',null,'廠房工程','德泰科技','電氣、弱電、給排水、消防','ELPF'],
+['zhubei',2026,'公共工程','新竹縣竹北地政、戶政事務所聯合辦公大樓新建工程','機電工程','EP']
+].map(([id,year,type,name,items,sys])=>({id,year,type,name,items,sys:sys.split('')}));
+const LOC={qigu:'台南市七股科技工業園區','mcl-late':'嘉義縣鹿草鄉',yuda:'台北市','ntu-eng':'台北市','mcl-1':'嘉義縣','nctu-dorm':'新竹市'};
+const MAPQ={huagu:'台北市內湖區民權東路六段','ntu-global':'台北市中正區羅斯福路四段','huyi-56':'新竹市','huyi-16':'新竹市',meiling:'台北市中正區林森南路與青島東路口',dongyi:'新竹縣竹東鎮二重埔',hwakuo:'台北市中山區',tmask:'新竹科學園區',huchang:'台北市中山區龍江路',tianlu:'台北市北投區','thsr-tunnel':'桃園市','thsr-v1':'桃園市','thsr-v2':'桃園市','thsr-v2b':'桃園市',nhri:'苗栗縣竹南鎮',mauritius:'Mauritius',xinyi:'台北市信義區',showchwan:'彰化縣鹿港鎮',sidao:'新竹科學園區',tpo:'苗栗縣竹南鎮',kansai:'新竹縣關西鎮',palau:'Koror, Palau','nctu-hakka':'新竹縣竹北市','mcl-sales':'嘉義縣鹿草鄉','mcl-1':'嘉義縣鹿草鄉','mcl-bridge':'嘉義縣鹿草鄉','mcl-late':'嘉義縣鹿草鄉',houli:'台中市后里區',yibang:'苗栗縣竹南鎮',wenchang:'桃園市桃園區','ntu-eng':'台北市大安區','nctu-dorm':'新竹市東區',qigu:'臺南市七股區',yuda:'台北市',tsmc12:'新竹科學園區',zhubei:'新竹縣竹北市'};
+const NOTES={
+  'ntu-eng':'簡報列「水電、空調、機電」，現有網站列「電氣、弱電、給排水、污水」，請確認施作項目。',
+  'nctu-dorm':'現有網站另列「臨電、網路設備」，簡報僅列「機電工程」。',
+  wenchang:'工程名稱「桃圈」疑為「桃園」誤植。',
+  detai:'年份與進度待確認。',
+  tsmc12:'業主名稱公開前，請確認是否需取得同意。',
+  'mcl-sales':'此項為平面配置規劃，是否列入機電實績請確認。',
+  taiyuan:'工程項目僅寫「大樓變更工程」，細項待補。'
+};
+const CIMG=new Set(['ntu-eng','wenchang','nctu-dorm','qigu','mcl-late','mcl-bridge','tsmc12','zhubei','yuda','tmask','hwakuo','dongyi','huchang','thsr-tunnel','thsr-v1','tianlu','nhri','huyi-56','meiling','thsr-v2b','thsr-v2','xinyi','mauritius','huyi-16','sidao','showchwan','tpo','kansai','taiyuan','palau','nctu-hakka','huagu','creon','houli','yibang','mcl-sales','ntu-global','fengdian']);
+const cimg=id=>id==='tsmc12'?'assets/cases/tsmc12-v2.jpg':CIMG.has(id)?'assets/cases/'+id+'.jpg':(id==='mcl-1'?'assets/cases/mcl-sales.jpg':undefined);
+const WMAP={};W.forEach((w,i)=>{WMAP[w.id]=i;});
+const FEATURED=['tsmc12','yuda','ntu-eng','mcl-late','nctu-dorm','qigu','nctu-hakka','huagu','thsr-v1'];
+const GROUP=t=>/公共/.test(t)?'公共工程':/高鐵/.test(t)?'高鐵':/學校/.test(t)?'學校':/廠房/.test(t)?'廠房':/住宅/.test(t)?'住宅':/飯店/.test(t)?'飯店':'醫療・辦公';
+const FILTERS=['全部','公共工程','廠房','學校','住宅','飯店','高鐵','醫療・辦公'];
+const LABELS={home:'HOME',about:'ABOUT',services:'SERVICES',works:'WORKS',case:'PROJECT',quals:'QUALITY',partner:'PARTNERS',contact:'CONTACT'};
+const STRIPS=[
+  {src:'assets/cover-fp.jpg',code:'FP',short:'消防',label:'消防設備工程',alt:'消防栓箱配線作業'},
+  {src:'assets/cover-lv.jpg',code:'LV',short:'弱電監控',label:'弱電監控系統工程',alt:'監控畫面與圖面核對'},
+  {src:'assets/cover-pl.jpg',code:'PL',short:'給排水',label:'給、排水配管工程',alt:'管路閥件施工'},
+  {src:'assets/cover-wm.jpg',code:'WM',short:'水電表申請',label:'自來水、電表申請',alt:'電表安裝'},
+  {src:'assets/cover-el.jpg',code:'EL',short:'電氣工程',label:'高、低壓電氣工程',alt:'盤體絕緣測試與檢驗紀錄'},
+  {src:'assets/cover-ac.jpg',code:'AC',short:'空調',label:'空調工程',alt:'空調運轉測試'},
+  {src:'assets/cover-ww.jpg',code:'WW',short:'汙水處理',label:'廢、汙水處理',alt:'排水溝配管施工'}
+];
+const WEB3FORMS_KEY='d4387347-7435-41a7-900d-a05db124bfb7';
+const ORDER_TYPES=['電氣','給排水','空調','弱電','消防','機電統包','其他'];
+const OPS=[.42,.38,.34,.3,.26,.24,.24];
+const EASE='cubic-bezier(.19,1,.22,1)';
+function parseHash(){const h=(location.hash||'').replace(/^#\/?/,'');const [p,id]=h.split('/');if(p==='works'&&id&&WMAP[id]!=null)return{page:'case',id};if(['about','services','works','quals','partner','contact'].includes(p))return{page:p};return{page:'home'};}
+const yl=w=>w.year?String(w.year):'';
+const marks=(sys,big)=>SYS.map(s=>{const on=sys.includes(s.k);return{n:s.n,bg:on?'#1f2f86':'transparent',c:on?'#fff':'#8a857c',bd:on?'#1f2f86':'rgba(26,29,36,.18)'};});
+
+class Component extends DCLogic {
+  rootRef = React.createRef();
+  state = {route:parseHash(),menu:false,solid:false,active:0,step:0,openStep:0,feat:0,filter:'全部',sysF:'',mq:false,osReduced:false,hover:-1,submitting:false,formMsg:'',formOk:false,errs:{},chips:[],when:'',curtainLabel:''};
+
+  componentDidMount(){
+    this.mm=window.matchMedia('(max-width: 860px)');this.rm=window.matchMedia('(prefers-reduced-motion: reduce)');
+    this.onMq=()=>this.setState({mq:this.mm.matches,osReduced:this.rm.matches});
+    this.mm.addEventListener('change',this.onMq);this.rm.addEventListener('change',this.onMq);
+    window.addEventListener('hashchange',this.onHash);
+    window.addEventListener('scroll',this.onScroll,{passive:true});
+    window.addEventListener('resize',this.onScroll);
+    window.addEventListener('pointermove',this.onWinMove);
+    window.addEventListener('pointerup',this.onWinUp);
+    this.initCursor();
+    this.setState({mq:this.mm.matches,osReduced:this.rm.matches},()=>{this.afterRender(false);this.intro(true);});
+  }
+  componentWillUnmount(){
+    this.mm&&this.mm.removeEventListener('change',this.onMq);this.rm&&this.rm.removeEventListener('change',this.onMq);
+    window.removeEventListener('hashchange',this.onHash);window.removeEventListener('scroll',this.onScroll);window.removeEventListener('resize',this.onScroll);
+    window.removeEventListener('pointermove',this.onWinMove);window.removeEventListener('pointerup',this.onWinUp);
+    this.curCleanup&&this.curCleanup();
+    this.io&&this.io.disconnect();document.body.style.overflow='';
+  }
+  componentDidUpdate(pp,ps){
+    const s=this.state;
+    if(s.route!==ps.route||s.mq!==ps.mq||pp.motion!==this.props.motion) this.afterRender(s.route!==ps.route);
+    if(ps.step!==s.step) this.animPanel('[data-proc-panel]',true);
+    if(ps.openStep!==s.openStep) this.animPanel('[data-proc-open]',false);
+    if(!ps.menu&&s.menu) this.animMenu();
+    if(ps.menu!==s.menu) document.body.style.overflow=s.menu?'hidden':'';
+  }
+  initCursor(){
+    const fine=window.matchMedia('(hover: hover) and (pointer: fine)');
+    if(!fine.matches)return;
+    const NS='http://www.w3.org/2000/svg',html=document.documentElement;
+    const wrap=document.createElement('div');wrap.setAttribute('aria-hidden','true');
+    wrap.style.cssText='position:fixed;left:0;top:0;width:0;height:0;z-index:2147483000;pointer-events:none;opacity:0;transition:opacity .25s ease';
+    const cross=document.createElement('div');
+    cross.style.cssText='position:absolute;left:0;top:0;width:0;height:0;transition:opacity .2s ease';
+    const EZ='cubic-bezier(.2,.8,.2,1)',ticks=[];
+    [[0,-1],[1,0],[0,1],[-1,0]].forEach(([dx,dy])=>{const t=document.createElement('span');const v=dx===0;
+      t.style.cssText='position:absolute;background:#141c3f;'+(v?'width:1px;height:8px;left:-.5px;top:'+(dy<0?-11:3)+'px':'height:1px;width:8px;top:-.5px;left:'+(dx<0?-11:3)+'px')+';transition:transform .32s '+EZ+',background-color .25s ease';
+      t._dx=dx;t._dy=dy;ticks.push(t);cross.appendChild(t);});
+    const dot=document.createElement('span');dot.style.cssText='position:absolute;left:-1.5px;top:-1.5px;width:3px;height:3px;border-radius:50%;background:#b0673a;transition:transform .32s '+EZ;cross.appendChild(dot);
+    wrap.appendChild(cross);document.body.appendChild(wrap);
+    html.classList.add('cs-cur');
+    let x=-100,y=-100,raf=0,hot=false,dark=false;
+    const place=()=>{raf=0;wrap.style.transform='translate3d('+x+'px,'+y+'px,0)';};
+    const isDark=el=>{for(let n=el,i=0;n&&n!==document.body&&i<12;n=n.parentElement,i++){const bg=getComputedStyle(n).backgroundColor;const m=bg.match(/rgba?\(([^)]+)\)/);if(!m)continue;const p=m[1].split(',').map(Number);if(p.length===4&&p[3]<.5)continue;return (p[0]*.299+p[1]*.587+p[2]*.114)<110;}return false;};
+    const move=e=>{if(e.pointerType&&e.pointerType!=='mouse')return;x=e.clientX;y=e.clientY;wrap.style.opacity='1';if(!raf)raf=requestAnimationFrame(place);};
+    const over=e=>{const t=e.target;if(!(t instanceof Element))return;
+      const txt=!!t.closest('input,textarea,select,[contenteditable]');
+      const h=!txt&&!!t.closest('a,button,[role="button"],label,summary,[data-track] a');
+      cross.style.opacity=txt?'0':'1';
+      if(h!==hot){hot=h;ticks.forEach(t=>{t.style.transform=h?'translate('+(t._dx*4)+'px,'+(t._dy*4)+'px)':'none';});dot.style.transform=h?'scale(1.6)':'none';}
+      const d=isDark(t);if(d!==dark){dark=d;ticks.forEach(k=>{k.style.backgroundColor=d?'#f6f3ee':'#141c3f';});}};
+    const leave=()=>{wrap.style.opacity='0';};
+    const down=e=>{if(e.pointerType&&e.pointerType!=='mouse')return;if(this.reduced())return;
+      const r=document.createElement('span');r.style.cssText='position:absolute;left:-20px;top:-20px;width:40px;height:40px;border-radius:50%;border:1px solid #b0673a;box-sizing:border-box;pointer-events:none';wrap.appendChild(r);
+      const an=r.animate([{transform:'scale(.15)',opacity:.9},{transform:'scale(1)',opacity:0}],{duration:500,easing:'cubic-bezier(.2,.7,.3,1)',fill:'forwards'});an.onfinish=()=>r.remove();};
+    window.addEventListener('pointermove',move,{passive:true});
+    document.addEventListener('pointerover',over,{passive:true});
+    document.documentElement.addEventListener('pointerleave',leave);
+    window.addEventListener('pointerdown',down,{passive:true});
+    const onFine=()=>{if(!fine.matches){this.curCleanup&&this.curCleanup();}};fine.addEventListener('change',onFine);
+    this.curCleanup=()=>{window.removeEventListener('pointermove',move);document.removeEventListener('pointerover',over);document.documentElement.removeEventListener('pointerleave',leave);window.removeEventListener('pointerdown',down);fine.removeEventListener('change',onFine);wrap.remove();html.classList.remove('cs-cur');this.curCleanup=null;};
+  }
+  reduced(){const m=this.props.motion||'auto';return m==='reduced'?true:m==='full'?false:this.state.osReduced;}
+  q(sel){const r=this.rootRef.current;return r?r.querySelector(sel):null;}
+
+  onHash=()=>{
+    const next=parseHash(),cur=this.state.route;
+    if(next.page===cur.page&&next.id===cur.id){this.setState({menu:false});return;}
+    const c=this.q('[data-curtain]');
+    const go=()=>this.setState({route:next,menu:false,hover:-1,errs:{}},()=>window.scrollTo(0,0));
+    if(this.reduced()||!c||!c.animate){go();return;}
+    this.setState({curtainLabel:LABELS[next.page]});
+    (this.curAnims||[]).forEach(x=>x.cancel());clearTimeout(this.curT1);clearTimeout(this.curT2);clearTimeout(this.curT3);
+    const a=c.animate([{transform:'translateY(100%)'},{transform:'translateY(0)'}],{duration:520,easing:'cubic-bezier(.7,0,.3,1)',fill:'forwards'});
+    this.curAnims=[a];
+    this.curT1=setTimeout(()=>{go();this.curT2=setTimeout(()=>{const b=c.animate([{transform:'translateY(0)'},{transform:'translateY(-100%)'}],{duration:640,easing:'cubic-bezier(.7,0,.3,1)',fill:'forwards'});this.curAnims.push(b);this.curT3=setTimeout(()=>{this.curAnims.forEach(x=>x.cancel());this.curAnims=[];},680);},80);},540);
+  };
+
+  afterRender(rc){
+    const root=this.rootRef.current;if(!root)return;
+    if(rc){
+      this.revealBase=this.reduced()?0:420;clearTimeout(this.rbT);this.rbT=setTimeout(()=>{this.revealBase=0;},1000);
+      root.querySelectorAll('[data-rv-done]').forEach(e=>e.removeAttribute('data-rv-done'));
+      if(this.state.route.page==='home') this.intro(false);
+    }
+    this.setupReveals();this.cache();this.tick();
+  }
+  cache(){
+    const root=this.rootRef.current;const big={};
+    const bigEq={};SYS.forEach(s=>{big[s.k]=[...root.querySelectorAll('[data-big] [data-route-g="'+s.k+'"] path')];bigEq[s.k]=root.querySelector('[data-big] [data-eq-g="'+s.k+'"]');});
+    this.els={bigEq,people:root.querySelector('[data-people]'),panels:[...root.querySelectorAll('[data-svc-panel]')],big,proc:root.querySelector('[data-proc]'),procFill:root.querySelector('[data-proc-fill]'),heroPar:root.querySelector('[data-hero-par]'),track:root.querySelector('[data-track]'),trackFill:root.querySelector('[data-track-fill]')};
+  }
+  setupReveals(){
+    const root=this.rootRef.current;this.io&&this.io.disconnect();
+    const els=root.querySelectorAll('[data-rv]');
+    if(this.reduced()){els.forEach(e=>{e.style.opacity='';e.style.clipPath='';e.style.transform='';e.querySelectorAll('[data-draw]').forEach(p=>p.style.strokeDashoffset='');});return;}
+    this.io=new IntersectionObserver(ents=>ents.forEach(en=>{if(en.isIntersecting){this.io.unobserve(en.target);this.play(en.target);}}),{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(e=>{if(e.dataset.rvDone)return;const t=e.dataset.rv;
+      if(t==='up')e.style.opacity='0';else if(t==='mask')e.style.clipPath='inset(100% 0 0 0)';else if(t==='line')e.style.transform='scaleX(0)';else if(t==='draw')e.querySelectorAll('[data-draw]').forEach(p=>p.style.strokeDashoffset='1');
+      this.io.observe(e);});
+  }
+  play(e){
+    e.dataset.rvDone='1';const d=(+(e.dataset.rvDelay||0))+(this.revealBase||0),t=e.dataset.rv;
+    if(t==='up'){e.style.opacity='';e.animate([{opacity:0,transform:'translateY(32px)'},{opacity:1,transform:'none'}],{duration:1100,delay:d,easing:EASE,fill:'backwards'});}
+    else if(t==='mask'){e.style.clipPath='';e.animate([{clipPath:'inset(100% 0 0 0)'},{clipPath:'inset(0% 0 0 0)'}],{duration:1300,delay:d,easing:EASE,fill:'backwards'});const im=e.querySelector('[data-rv-img]');im&&im.animate([{transform:'scale(1.18)'},{transform:'scale(1)'}],{duration:1800,delay:d,easing:EASE,fill:'backwards'});}
+    else if(t==='line'){e.style.transform='';e.animate([{transform:'scaleX(0)'},{transform:'scaleX(1)'}],{duration:1400,delay:d,easing:EASE,fill:'backwards'});}
+    else if(t==='draw'){e.querySelectorAll('[data-draw]').forEach((p,i)=>{p.style.strokeDashoffset='';p.animate([{strokeDashoffset:1},{strokeDashoffset:0}],{duration:1500,delay:d+200+i*90,easing:'cubic-bezier(.6,0,.2,1)',fill:'backwards'});});}
+  }
+  intro(full){
+    const root=this.rootRef.current;if(!root||this.state.route.page!=='home'||this.reduced())return;
+    const k=full?1:.5,b=full?120:(this.revealBase||0);
+    root.querySelectorAll('[data-hero-strip]').forEach((el,i)=>el.animate([{clipPath:'inset(100% 0 0 0)'},{clipPath:'inset(0% 0 0 0)'}],{duration:1500*k,delay:b+i*90*k,easing:EASE,fill:'backwards'}));
+    root.querySelectorAll('[data-hero-img]').forEach((el,i)=>el.animate([{transform:'scale(1.3)'},{transform:'scale(1.05)'}],{duration:2800*k,delay:b+i*90*k,easing:EASE,fill:'backwards'}));
+    root.querySelectorAll('[data-hero-line]').forEach((el,i)=>el.animate([{transform:'translateY(110%)'},{transform:'translateY(0)'}],{duration:1300,delay:b+700*k+i*160,easing:EASE,fill:'backwards'}));
+    root.querySelectorAll('[data-hero-grow]').forEach((el,i)=>el.animate([{transform:'scaleX(0)',opacity:0},{transform:'scaleX(1)',opacity:1}],{duration:1400,delay:b+1250*k+i*80,easing:EASE,fill:'backwards'}));
+    root.querySelectorAll('[data-hero-fade]').forEach((el,i)=>el.animate([{opacity:0,transform:el.dataset.heroFade==='0'?'none':'translateY(14px)'},{opacity:1,transform:'none'}],{duration:1000,delay:b+(el.dataset.heroFade==='0'?900:1600)*k+(i%4)*110,easing:EASE,fill:'backwards'}));
+    const dot=root.querySelector('[data-scroll-dot]');
+    if(dot){this.dotAnim&&this.dotAnim.cancel();this.dotAnim=dot.animate([{transform:'translateY(-100%)'},{transform:'translateY(100%)'}],{duration:1900,iterations:Infinity,delay:2400*k,easing:'cubic-bezier(.6,0,.4,1)'});}
+  }
+  animPanel(sel,img){
+    if(this.reduced())return;const el=this.q(sel);if(!el)return;
+    el.animate([{opacity:0,transform:'translateY(18px)'},{opacity:1,transform:'none'}],{duration:700,easing:EASE});
+    if(img){const im=el.querySelector('[data-panel-img]');im&&im.animate([{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0 0 0)'}],{duration:900,easing:EASE});}
+  }
+  animMenu(){
+    if(this.reduced())return;const root=this.rootRef.current;
+    root.querySelectorAll('[data-menu-item]').forEach((el,i)=>el.animate([{opacity:0,transform:'translateY(24px)'},{opacity:1,transform:'none'}],{duration:800,delay:80+i*60,easing:EASE,fill:'backwards'}));
+  }
+
+  onScroll=()=>{if(!this.raf)this.raf=requestAnimationFrame(this.tick);};
+  tick=()=>{
+    this.raf=0;let e=this.els;if(!e)return;
+    if(e.panels.length&&(!e.big.E||!e.big.E.length||!e.big.E[0].isConnected)){this.cache();e=this.els;}
+    const y=window.scrollY,H=window.innerHeight,R=this.reduced(),st={};
+    const home=this.state.route.page==='home'||this.state.route.page==='partner';
+    const solid=!home||y>H*0.85;if(solid!==this.state.solid)st.solid=solid;
+    const shortH=H<760;if(shortH!==this.state.shortH)st.shortH=shortH;
+    if(e.people&&!R){const r=e.people.getBoundingClientRect(),tot=r.height-H;const p=tot>0?Math.max(0,Math.min(1,-r.top/tot)):0;
+      const k=Math.max(0,Math.min(1,(p-.3)/.4));const ez=k*k*(3-2*k);
+      const im=e.people.querySelector('[data-people-img]'),ov=e.people.querySelector('[data-people-ov]'),q=e.people.querySelector('[data-people-q]'),en=e.people.querySelector('[data-people-end]');
+      if(im){im.style.filter='blur('+(10*(1-ez)).toFixed(2)+'px)';im.style.transform='scale('+(1.06-.06*ez).toFixed(4)+')';}
+      if(ov)ov.style.opacity=String(.6-.45*ez);
+      if(q){q.style.opacity=String(1-ez);q.style.transform='translateY('+(-40*ez).toFixed(1)+'px)';}
+      if(en){const t=Math.max(0,Math.min(1,(p-.62)/.25));en.style.opacity=String(t);en.style.transform='translateY('+(24*(1-t)).toFixed(1)+'px)';}}
+    if(e.heroPar)e.heroPar.style.transform=(R||y>H)?'':'translate3d(0,'+(y*0.22)+'px,0)';
+    if(e.panels.length&&e.big.E&&e.big.E.length){
+      let act=0;
+      e.panels.forEach((p,i)=>{const r=p.getBoundingClientRect();let f=(H*0.85-r.top)/(H*0.5);f=Math.max(0,Math.min(1,f));if(R)f=f>0?1:0;if(r.top<H*0.55)act=i;(e.big[SVC[i].k]||[]).forEach(path=>{path.style.strokeDashoffset=String(1-f);});});
+      SVC.forEach((s,i)=>{const a=i===act;(e.big[s.k]||[]).forEach(path=>{path.style.stroke=a?'#b0673a':'#cfc9bd';path.style.strokeWidth=a?'2.6':'1.2';});const g=e.bigEq[s.k];if(g){g.style.color=a?'#b0673a':'#d3cdc1';g.querySelectorAll('[data-lbl]').forEach(l=>{l.style.opacity=a?'1':'0';});}});
+      if(act!==this.state.active)st.active=act;
+    }
+    if(e.proc){const r=e.proc.getBoundingClientRect(),tot=r.height-H;const p=tot>0?Math.max(0,Math.min(.9999,-r.top/tot)):0;const s=Math.floor(p*5);if(e.procFill)e.procFill.style.transform='scaleX('+Math.min(1,p+0.1)+')';if(s!==this.state.step)st.step=s;}
+    if(Object.keys(st).length)this.setState(st);
+  };
+
+  // works track
+  onTrackScroll=ev=>{const t=ev.currentTarget,c=t.firstElementChild;if(!c)return;const w=c.getBoundingClientRect().width+28;const idx=Math.min(FEATURED.length-1,Math.round(t.scrollLeft/w));const max=t.scrollWidth-t.clientWidth;const n=FEATURED.length+1;const f=this.q('[data-track-fill]');if(f)f.style.transform='scaleX('+(1/n+(max>0?t.scrollLeft/max:0)*(1-1/n))+')';if(idx!==this.state.feat)this.setState({feat:idx});};
+  featMove(dir){const t=this.q('[data-track]');if(!t)return;const c=t.firstElementChild;const w=c?c.getBoundingClientRect().width+28:400;t.scrollBy({left:dir*w,behavior:this.reduced()?'auto':'smooth'});}
+  onDown=ev=>{if(ev.pointerType!=='mouse'||ev.button!==0)return;const t=ev.currentTarget;this.drag={t,x:ev.clientX,sl:t.scrollLeft,moved:false};t.style.scrollSnapType='none';t.style.cursor='grabbing';};
+  onWinMove=ev=>{const d=this.drag;if(!d)return;const dx=ev.clientX-d.x;if(Math.abs(dx)>5)d.moved=true;d.t.scrollLeft=d.sl-dx;this.moveFollow(ev,.8);};
+  onWinUp=()=>{const d=this.drag;if(!d)return;this.drag=null;d.t.style.cursor='';const t=d.t;const c=t.firstElementChild;const w=c?c.getBoundingClientRect().width+28:400;const target=Math.round(t.scrollLeft/w)*w;t.scrollTo({left:target,behavior:this.reduced()?'auto':'smooth'});setTimeout(()=>{t.style.scrollSnapType='';},450);if(d.moved){this.justDragged=true;setTimeout(()=>{this.justDragged=false;},60);}};
+  onTrackClick=ev=>{if(this.justDragged){ev.preventDefault();ev.stopPropagation();}};
+  moveFollow(ev,s){const f=this.q('[data-follow]');if(!f)return;f.style.opacity='1';f.style.transform='translate3d('+ev.clientX+'px,'+ev.clientY+'px,0) translate(-50%,-50%) scale('+s+')';}
+  onTrackMove=ev=>{if(ev.pointerType!=='mouse'||this.drag)return;this.moveFollow(ev,1);};
+  onTrackLeave=()=>{const f=this.q('[data-follow]');if(f){f.style.opacity='0';}};
+
+  goStep(i){const e=this.els;if(!e||!e.proc)return;const r=e.proc.getBoundingClientRect(),H=window.innerHeight,tot=r.height-H;window.scrollTo({top:window.scrollY+r.top+tot*(i/5)+4,behavior:this.reduced()?'auto':'smooth'});}
+  scrollToSvc(k){const el=this.q('[data-svc-sec="'+k+'"]');if(!el)return;window.scrollTo({top:window.scrollY+el.getBoundingClientRect().top-124,behavior:this.reduced()?'auto':'smooth'});}
+
+  onSubmit=async ev=>{
+    ev.preventDefault();if(this.state.submitting)return;
+    const form=ev.currentTarget,fd=new FormData(form);
+    const v=k=>String(fd.get(k)||'').trim();
+    const name=v('聯絡人'),company=v('公司／單位'),phone=v('聯絡電話'),email=v('Email'),msg=v('需求說明');
+    const digits=phone.replace(/\D/g,'');
+    const errs={};
+    if(!name)errs.name='請填寫聯絡人姓名';
+    if(!phone)errs.phone='請填寫聯絡電話';else if(!/^[\d\s\-+()#.,]+(?:\s*(?:分機|轉|ext\.?)\s*\d+)?$/i.test(phone)||digits.length<8||digits.length>20)errs.phone='電話格式不正確，例如 03-5182626 或 0912-345-678';
+    if(!email)errs.email='請填寫 Email';else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))errs.email='Email 格式不正確';
+    if(Object.keys(errs).length){this.setState({errs,formMsg:'',formOk:false});return;}
+    if(fd.get('botcheck')){this.setState({errs:{},formOk:true,formMsg:'已收到您的諮詢，我們將由專人盡快與您聯繫。'});return;}
+    const types=this.state.chips.length?ORDER_TYPES.filter(t=>this.state.chips.includes(t)).join('、'):'未選擇';
+    const payload={access_key:WEB3FORMS_KEY,subject:'【官網諮詢】'+name+'－'+(company||'未填單位'),from_name:'重陞機電官網',replyto:email,botcheck:'',
+      '聯絡人':name,'公司／單位':company||'未填寫','聯絡電話':phone,'Email':email,'工程類型':types,'預計工期':this.state.when||'未選擇','需求說明':msg||'未填寫'};
+    this.setState({submitting:true,errs:{},formMsg:'',formOk:false});
+    try{
+      const res=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(payload)});
+      const data=await res.json().catch(()=>({}));
+      if(!res.ok||!data.success)throw new Error(data.message||res.status);
+      form.reset();
+      this.setState({submitting:false,chips:[],when:'',formOk:true,formMsg:'已收到您的諮詢，我們將由專人盡快與您聯繫。'});
+    }catch(e){
+      this.setState({submitting:false,formOk:false,formMsg:'送出失敗，請稍後再試，或直接來信 cs@ycgroup.com.tw'});
+    }
+  };
+
+  drawing(mode,include,active){
+    const h=React.createElement,SC=mode==='scroll',OR='#b0673a',BG='#d3cdc1',LB='#8f4f28';
+    const P=(x,y,z)=>((x-y)*0.866).toFixed(1)+' '+((x+y)*0.5-z).toFixed(1);
+    const poly=pts=>'M'+pts.map(p=>P(p[0],p[1],p[2])).join(' L')+' Z';
+    const line=pts=>'M'+pts.map(p=>P(p[0],p[1],p[2])).join(' L');
+    const X=220,Y=130,FH=58,TOP=232,F4=[0,1,2,3],kids=[];
+    const hot=k=>!SC&&include.includes(k);
+    kids.push(h('path',{key:'gnd',d:poly([[-12,-12,0],[276,-12,0],[276,146,0],[-12,146,0]]),fill:'#ebe7e0'}));
+    kids.push(h('path',{key:'bw1',d:poly([[0,0,0],[0,Y,0],[0,Y,TOP],[0,0,TOP]]),fill:'#e4dfd6'}));
+    kids.push(h('path',{key:'bw2',d:poly([[0,0,0],[X,0,0],[X,0,TOP],[0,0,TOP]]),fill:'#ebe6de'}));
+    F4.forEach(i=>kids.push(h('path',{key:'sl'+i,d:poly([[0,0,i*FH],[X,0,i*FH],[X,Y,i*FH],[0,Y,i*FH]]),fill:'rgba(214,208,197,.3)',stroke:'#d6d0c5',strokeWidth:.8})));
+    const RT={
+      E:[[[250,98,12],[205,98,12]],[[205,98,12],[205,98,218]],...F4.map(k=>[[205,98,k*FH+46],[28,98,k*FH+46]])],
+      P:[[[170,35,TOP],[170,35,6]],...F4.map(k=>[[170,35,k*FH+8],[170,118,k*FH+8]]),[[170,35,4],[262,35,4]]],
+      H:[[[65,85,TOP],[65,85,50]],...F4.map(k=>[[65,85,k*FH+50],[204,85,k*FH+50]])],
+      L:[[[45,30,6],[45,30,210]],...F4.map(k=>[[45,30,k*FH+34],[45,120,k*FH+34],[200,120,k*FH+34]])],
+      F:[[[110,112,6],[110,112,220]],...F4.map(k=>[[110,112,k*FH+54],[110,68,k*FH+54]]),...F4.map(k=>[[20,68,k*FH+54],[210,68,k*FH+54]])]
+    };
+    const EQ={
+      E:[{b:[236,82,0,266,112,28],t:'變電站',l:[252,208]},{b:[194,88,0,212,108,40],t:'配電盤',l:[252,150]}],
+      P:[{b:[152,18,TOP,188,52,TOP+30],t:'水塔',l:[200,-262]},{b:[150,20,0,174,46,18],t:'加壓泵',l:[252,40]}],
+      H:[{b:[36,58,TOP,94,112,TOP+22],t:'空調主機',l:[-150,-262]},{b:[138,76,FH*3+38,170,96,FH*3+50],t:'送風機',l:[-150,-150]}],
+      L:[{b:[24,14,0,62,46,32],t:'監控機房',l:[-150,-40]},{b:[194,114,FH*3+28,206,126,FH*3+40],t:'監視器',l:[252,-110]}],
+      F:[{b:[94,98,0,126,126,22],t:'消防泵浦',l:[-150,150]},{b:[102,122,FH+8,118,130,FH+36],t:'消防栓',l:[-150,60]}]
+    };
+    SYS.forEach(s=>{const on=hot(s.k);
+      kids.push(h('g',{key:'r'+s.k,'data-route-g':s.k,fill:'none',strokeLinecap:'round',strokeLinejoin:'round'},RT[s.k].map((pts,j)=>h('path',{key:j,d:line(pts),pathLength:1,strokeDasharray:'1 1',strokeDashoffset:SC?1:0,'data-draw':on?'1':undefined,stroke:on?OR:BG,strokeWidth:on?2.6:1.2,style:{transition:'stroke .5s, stroke-width .5s'}}))));
+    });
+    kids.push(h('path',{key:'fw1',d:poly([[X,0,0],[X,Y,0],[X,Y,TOP],[X,0,TOP]]),fill:'rgba(246,243,238,.36)',stroke:'#cfc9bd',strokeWidth:.8}));
+    kids.push(h('path',{key:'fw2',d:poly([[0,Y,0],[X,Y,0],[X,Y,TOP],[0,Y,TOP]]),fill:'rgba(246,243,238,.28)',stroke:'#cfc9bd',strokeWidth:.8}));
+    kids.push(h('path',{key:'roof',d:poly([[0,0,TOP],[X,0,TOP],[X,Y,TOP],[0,Y,TOP]]),fill:'rgba(214,208,197,.5)',stroke:'#cfc9bd',strokeWidth:.8}));
+    SYS.forEach(s=>{const on=hot(s.k);
+      const g=EQ[s.k].map((e,j)=>{const [x0,y0,z0,x1,y1,z1]=e.b;
+        const faces=[h('path',{key:'t',d:poly([[x0,y0,z1],[x1,y0,z1],[x1,y1,z1],[x0,y1,z1]]),fill:'currentColor',fillOpacity:.55}),h('path',{key:'r',d:poly([[x1,y0,z0],[x1,y1,z0],[x1,y1,z1],[x1,y0,z1]]),fill:'currentColor',fillOpacity:.8}),h('path',{key:'f',d:poly([[x0,y1,z0],[x1,y1,z0],[x1,y1,z1],[x0,y1,z1]]),fill:'currentColor'})];
+        if(!on&&!SC)return h('g',{key:j},faces);
+        const cx=((x0+x1)/2-(y0+y1)/2)*0.866,cy=((x0+x1)/2+(y0+y1)/2)*0.5-z1,lx=e.l[0],ly=e.l[1],dir=lx>cx?1:-1;
+        const lbl=h('g',{key:'l','data-lbl':'1',style:{opacity:SC?0:1,transition:'opacity .5s'}},[h('circle',{key:'dt',cx:cx.toFixed(1),cy:cy.toFixed(1),r:2.2,fill:LB}),h('path',{key:'ln',d:'M'+cx.toFixed(1)+' '+cy.toFixed(1)+' L'+(lx-dir*4)+' '+ly,stroke:LB,strokeWidth:.9,fill:'none'}),h('text',{key:'tx',x:lx,y:ly+5,fontSize:15,fill:LB,textAnchor:dir>0?'start':'end',fontFamily:"'Noto Sans TC',sans-serif",letterSpacing:1},e.t)]);
+        return h('g',{key:j},[...faces,lbl]);});
+      kids.push(h('g',{key:'e'+s.k,'data-eq-g':s.k,style:{color:on?OR:BG,transition:'color .5s'}},g));
+    });
+    return h('svg',{viewBox:'-215 -290 530 510',preserveAspectRatio:'xMidYMid meet',style:{width:'100%',height:'100%',display:'block',overflow:'visible'},'aria-hidden':'true'},kids);
+  }
+
+  renderVals(){
+    const s=this.state,p=s.route.page,mobile=s.mq,desktop=!mobile,R=this.reduced(),flags=this.props.showFlags??true;
+    const layoutB=!String(this.props.caseLayout||'B').startsWith('A');
+    const onDark=(p==='home'||p==='partner')&&!s.solid&&!s.menu;
+    const card=w=>({...w,yearLabel:yl(w),href:'#/works/'+w.id,slot:'case-'+w.id+(w.id==='tsmc12'||w.id==='ntu-eng'?'-v2':''),img:cimg(w.id),marks:marks(w.sys)});
+    const services=SVC.map(v=>{const rel=W.filter(w=>w.sys.includes(v.k)).sort((a,b)=>(b.year||0)-(a.year||0));return{...v,mini:this.drawing('static',[v.k],v.k),worksHref:'#/works',worksLabel:'查看'+v.name+'相關實績（'+rel.length+'）',related:rel.slice(0,4).map(card)};});
+    let list=W.slice().sort((a,b)=>(b.year||0)-(a.year||0));
+    if(s.filter!=='全部')list=list.filter(w=>GROUP(w.type)===s.filter);
+    if(s.sysF)list=list.filter(w=>w.sys.includes(s.sysF));
+    const cw=p==='case'?W[WMAP[s.route.id]]:null;
+    let cs=null,prevCase={},nextCase={};
+    if(cw){
+      const sorted=W.slice().sort((a,b)=>(a.year||2027)-(b.year||2027));const i=sorted.findIndex(w=>w.id===cw.id);
+      prevCase=card(sorted[(i-1+sorted.length)%sorted.length]);nextCase=card(sorted[(i+1)%sorted.length]);
+      const notes=[];if(NOTES[cw.id])notes.push(NOTES[cw.id]);if(!LOC[cw.id])notes.push('工程地點待補充。');notes.push('工程規模、施工期間、業主或營造單位待補充。');notes.push('實景照片待提供，並確認拍攝來源與公開授權。');
+      cs={...card(cw),itemList:cw.items.replace(/^\(([^)]*)\)\s*/,'').split(/[、，]/).map(x=>x.trim()).filter(Boolean),hasSys:cw.sys.some(k=>'EPHLF'.includes(k)),notes,showNotes:flags,
+        meta:[{k:'年份',v:yl(cw)},{k:'案型',v:cw.type},{k:'地點',v:LOC[cw.id]||MAPQ[cw.id]||'待補充'},{k:'涉及系統',v:cw.sys.map(k=>({E:'電氣',P:'給排水',H:'空調',L:'弱電',F:'消防',G:'接地'})[k]).join('、')||'—'}],
+        drawing:this.drawing('static',cw.sys,null)};
+      cs.itemCards=cs.itemList.map((t,i)=>({t,no:String(i+1).padStart(2,'0')}));cs.itemCount=String(cs.itemList.length).padStart(2,'0');
+      cs.sysRows=SVC.map(v=>{const on=cw.sys.includes(v.k);return{...v,on,off:!on,c:on?'#141c3f':'#a29d93',dot:on?'#b0673a':'transparent',dotBd:on?'#b0673a':'rgba(26,29,36,.28)',st:on?'施作':'—',stc:on?'#8f4f28':'#a29d93'};});
+      cs.sysOnCount=String(cw.sys.filter(k=>'EPHLF'.includes(k)).length);
+      const mq=MAPQ[cw.id];cs.hasMap=!!mq;cs.noMap=!mq;cs.mapLabel=mq||'';
+      if(mq){const e=encodeURIComponent(mq);cs.mapSrc='https://maps.google.com/maps?q='+e+'&z=12&hl=zh-TW&output=embed';cs.mapHref='https://www.google.com/maps/search/?api=1&query='+e;}
+    }
+    const pill=on=>({bd:on?'#141c3f':'rgba(26,29,36,.25)',bg:on?'#141c3f':'transparent',c:on?'#fff':'#141c3f'});
+    const nav=[['about','關於重陞'],['services','工程服務'],['works','工程實績'],['quals','品質保證'],['partner','合作夥伴']];
+    return {
+      rootRef:this.rootRef,showFlags:flags,desktop,mobile,
+      isHome:p==='home',isAbout:p==='about',isServices:p==='services',isWorks:p==='works',isCase:p==='case'&&!!cs,isQuals:p==='quals',isPartner:p==='partner',toPartnerForm:()=>{const el=this.q('[data-partner-form]');if(el)window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-60,behavior:this.reduced()?'auto':'smooth'});},isContact:p==='contact',
+      hdrBg:onDark?'rgba(14,22,51,0)':'rgba(246,243,238,.94)',hdrLine:onDark?'rgba(255,255,255,.18)':'rgba(26,29,36,.12)',hdrLine2:onDark?'rgba(255,255,255,.4)':'rgba(26,29,36,.3)',hdrText:onDark?'#fff':'#141c3f',
+      logoFilter:onDark?'brightness(0) invert(1)':'none',logoH:mobile?'16px':'22px',cornerC:onDark?'rgba(255,255,255,.7)':'rgba(26,29,36,.55)',
+      navItems:nav.map(([k,l],i)=>{const on=p===k||(k==='works'&&p==='case');return{href:'#/'+k,label:l,no:'0'+(i+1),line:on?'100%':'0%',numOp:on?1:.55,cur:on?'page':'false'};}),
+      menuItems:[['','首頁'],...nav,['contact','聯絡我們']].map(([k,l],i)=>({href:'#/'+k,label:l,no:'0'+(i+1)})),
+      menuOpen:s.menu,toggleMenu:()=>this.setState(x=>({menu:!x.menu})),closeMenu:()=>this.setState({menu:false}),
+      curtainLabel:s.curtainLabel,peopleH:R?'100vh':'240vh',peopleBlur:R?'0px':'10px',peopleOv:R?.55:.6,peopleEnd:R?1:0,heroSingle:(this.props.heroMode||'strips')==='single',heroStrips:(this.props.heroMode||'strips')!=='single',followOn:desktop&&!R&&p==='home',
+      strips:(mobile?[0,3,6]:[0,1,2,3,4,5,6]).map((i,j)=>({...STRIPS[i],lbl:s.shortH?STRIPS[i].short:STRIPS[i].label,op:s.hover===i?Math.max(.3,OPS[mobile?j*3:i]-.34):OPS[mobile?j*3:i],enter:()=>{if(!mobile)this.setState({hover:i});},leave:()=>this.setState({hover:-1})})),
+      exploreDown:()=>{const el=this.q('[data-after-hero]');if(el)window.scrollTo({top:window.scrollY+el.getBoundingClientRect().top-72,behavior:R?'auto':'smooth'});},
+      stats:[{pre:'',num:'30',suf:'+',label:'年機電實務經驗',delay:0},{pre:'',num:'15',suf:'+',label:'項專業資格',delay:80},{pre:'',num:'5',suf:'大類',label:'整合工程類別',delay:160},{pre:'NT$',num:'2,980',suf:'萬',label:'資本總額',delay:240}],
+      svcHint:desktop?'往下捲動，左側建築會依序畫出每套系統的路徑與設備。':'每套系統附上建築示意，標出它在建築裡的位置。',
+      services,bigDrawing:desktop&&p==='home'?this.drawing('scroll',[],null):null,activeSvc:SVC[s.active],
+      legend:SVC.map((v,i)=>({n:v.name.replace('工程',''),c:i===s.active?'#8f4f28':'#6b675f'})),
+      featured:FEATURED.map((id,i)=>({...card(W[WMAP[id]]),idx:'0'+(i+1)})),featuredMobile:FEATURED.slice(0,5).map(id=>card(W[WMAP[id]])),
+      featNo:String(s.feat+1).padStart(2,'0'),featTotal:String(FEATURED.length).padStart(2,'0'),worksTotal:W.length,
+      featPrev:()=>this.featMove(-1),featNext:()=>this.featMove(1),onTrackScroll:this.onTrackScroll,onDown:this.onDown,onTrackMove:this.onTrackMove,onTrackLeave:this.onTrackLeave,onTrackClick:this.onTrackClick,noDrag:e=>e.preventDefault(),
+      steps:STEPS.map((x,i)=>{const on=i===s.step;return{...x,delay:i*80,show:on?1:0,pe:on?'auto':'none',cur:on?'step':'false',c:on?'#fff':'rgba(255,255,255,.62)',nodeBg:i<=s.step?'#b0673a':'#111a3d',nodeBd:i<=s.step?'#b0673a':'rgba(255,255,255,.5)',go:()=>this.goStep(i),isOpen:s.openStep===i,sign:s.openStep===i?'−':'+',open:()=>this.setState(y=>({openStep:y.openStep===i?-1:i}))};}),
+      proc:STEPS[s.step],
+      timeline:[{y:'1995',t:'重生水電成立',d:'民國 84 年 1 月創立。'},{y:'1998',t:'飯店與電子廠房',d:'華國大飯店、台灣光罩等案。'},{y:'2001',t:'參與台灣高鐵',d:'C215 標隧道與高架段接地系統。'},{y:'2010',t:'轉型為重陞機電',d:'民國 99 年更名為重陞機電工程股份有限公司。'},{y:'2019',t:'大學與產業園區',d:'台大工學院綜合新館、馬稠後產業園區等。'},{y:'2026',t:'持續深耕',d:'德泰科技、竹北地政戶政聯合辦公大樓等新案。'}].map((t,i)=>({...t,delay:i*70})),
+      depts:[{n:'行政管理部',d:'負責合規管理、人事資源與資安庶務，確保勞基法規落實，讓現場人員無後顧之憂。'},{n:'工務部',d:'專責開工前置規劃、優良廠商評選、合約建立、工程界面整合、清圖估算與成本控管。'},{n:'工程部',d:'負責現場技術排解、證照執行、工序優化、進度管控與施工品質監督。'}].map((d,i)=>({...d,delay:i*90})),
+      svcNav:[...SVC.map(v=>({no:v.no,name:v.name,k:v.k})),{no:'06',name:'其他項目',k:'X'}].map(n=>({...n,bd:'transparent',go:()=>this.scrollToSvc(n.k)})),
+      others:[{n:'接地工程',d:'台灣高鐵 C215 標隧道與高架段、科技廠房之接地系統工程。'},{n:'自來水、電表申請',d:'協助辦理給水與電力申請，銜接送水、送電。'},{n:'廢、污水處理',d:'污水處理廠及飯店增建之廢、污水處理機電工程。'},{n:'機電統包',d:'由規劃、施工到驗收，整合各系統的統包承攬。'}].map((o,i)=>({...o,delay:i*80})),
+      list:list.map(card),listCount:list.length,listEmpty:list.length===0,rowCols:desktop?'88px minmax(0,1fr) 120px 200px 24px':'64px minmax(0,1fr)',rowGap:desktop?'24px':'12px 16px',
+      filters:FILTERS.map(f=>({label:f,count:f==='全部'?W.length:W.filter(w=>GROUP(w.type)===f).length,on:s.filter===f,...pill(s.filter===f),go:()=>this.setState({filter:f})})),
+      sysFilters:[{k:'',label:'不限'},...SYS.map(x=>({k:x.k,label:x.n})),{k:'G',label:'接地'}].map(x=>({...x,on:s.sysF===x.k,...pill(s.sysF===x.k),go:()=>this.setState({sysF:x.k})})),
+      cs:cs||{meta:[],itemList:[],marks:[],notes:[],itemCards:[],sysRows:[]},prevCase,nextCase,caseA:!layoutB,caseB:layoutB,
+      caseSlot:cs?React.createElement('image-slot',{key:cs.slot,id:cs.slot,src:cs.img,shape:'rect',placeholder:'拖放此案例的現場或完工照片'}):null,
+      pillars:[{n:'合法性',en:'LEGALITY',d:'具備完整法定執業證照。'},{n:'全面性',en:'COVERAGE',d:'橫跨電、水、空調、弱電及消防。'},{n:'可靠性',en:'RELIABILITY',d:'經公共工程委員會回訓認可。'},{n:'預判性',en:'FORESIGHT',d:'豐富經驗能預先排除工程阻礙。'}].map((x,i)=>({...x,delay:i*80})),
+      licenses:[{n:'電器承裝業'},{n:'自來水管承裝商'}],
+      notSent:true,hasMsg:!!s.formMsg,formMsg:s.formMsg,msgColor:s.formOk?'#1f2f86':'#9e3b1b',submitting:s.submitting,submitLabel:s.submitting?'送出中…':'送出諮詢',submitCur:s.submitting?'default':'pointer',submitOp:s.submitting?.6:1,errs:{name:s.errs.name||'',phone:s.errs.phone||'',email:s.errs.email||''},onSubmit:this.onSubmit,
+      chipList:['電氣','給排水','空調','弱電','消防','機電統包','其他'].map(n=>{const on=s.chips.includes(n);return{n,on,...pill(on),go:()=>this.setState(x=>({chips:on?x.chips.filter(c=>c!==n):[...x.chips,n]}))};}),
+      whenList:['半年至一年','一年至兩年','兩年以上','尚未確定'].map(n=>{const on=s.when===n;return{n,on,bg:on?'#141c3f':'transparent',c:on?'#fff':'#141c3f',go:()=>this.setState({when:n})};}),
+      contactInfo:[{k:'電話',v:'03-518-2626',href:'tel:+88635182626',flagOn:false,flag:''},{k:'傳真',v:'03-518-2727',href:'#/contact',flagOn:false,flag:''},{k:'Email',v:'cs@ycgroup.com.tw',href:'mailto:cs@ycgroup.com.tw',flagOn:false,flag:''},{k:'地址',v:'新竹縣竹北市環科一路 23 號 8 樓之 5',href:'https://maps.google.com/?q=新竹縣竹北市環科一路23號8樓之5',flagOn:false,flag:''}]
+    };
+  }
+}
+</script>
+</body>
+</html>
